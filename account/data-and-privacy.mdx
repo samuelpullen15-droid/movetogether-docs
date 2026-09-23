@@ -8,7 +8,7 @@ MoveTogether uses your account, activity, fitness, and social information to pro
 ## What MoveTogether uses
 
 - **Account information:** your name, email address, username, profile photo, and the account settings you choose.
-- **Fitness information:** activity totals, workouts, goals, and other health metrics you authorize a connected source to provide.
+- **Fitness information:** activity totals, workouts, goals, and other health metrics you allow MoveTogether to read from Apple Health or Health Connect.
 - **Competition and social information:** scores, rankings, participation history, friendships, posts, and messages needed for the features you use.
 - **Product diagnostics:** app events, masked session replays, crash details, and performance information when you opt in to product analytics.
 
@@ -16,7 +16,7 @@ MoveTogether uses your account, activity, fitness, and social information to pro
 
 | Area | How it is used or shared |
 | --- | --- |
-| Connected health data | Apple Health, Health Connect, and connected trackers provide the data you authorize. MoveTogether stores the copies needed for scores, leaderboards, activity history, badges, and coaching; it does not write changes back to the original source. |
+| Health data | Apple Health (iPhone) and Health Connect (Android) provide the data you authorize. MoveTogether stores the copies needed for scores, leaderboards, activity history, badges, and coaching; it does not write changes back to the original source. |
 | Competitions and social features | Competition participants can see the leaderboard information and competition details you share. Friends can see activity you share in social features. |
 | Product analytics | When you opt in, PostHog can receive your persistent account UUID, usage events, masked session replay, and crash or performance diagnostics. |
 | Social infrastructure | Stream receives the identity and content needed for chat, communities, feeds, and moderation. |
@@ -56,7 +56,6 @@ MoveTogether uses these third-party services to operate:
 | Anthropic Claude | Powers Coach Mo text; direct names are replaced with placeholders and the MoveTogether user ID is omitted from prompts |
 | ElevenLabs | Powers Coach Mo voice using the audio and context needed for that feature |
 | Intercom | Powers signed-in Marco support using authenticated account context and support messages |
-| OpenWearables | Health data integration for third-party trackers |
 | Hive | Content moderation (text and image) |
 | Stream | Chat, communities, feeds, and moderation using the identity and content those features need |
 | Sentry | Error tracking and performance monitoring |

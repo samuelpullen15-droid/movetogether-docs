@@ -1,43 +1,32 @@
 ---
-title: "Choose your primary activity source"
-description: "Choose Automatic or a preferred activity provider, understand fallback behavior, and distinguish daily totals from Apple Health contributors."
+title: "Choose which tracker counts"
+description: "Pick the one tracker that counts toward your rings, change it later in Data Sources, and understand why MoveTogether never adds devices together."
 ---
 
-If you connect more than one activity provider, you can choose which one MoveTogether should prefer for your daily activity totals. This helps when you wear different devices or your phone and tracker record different numbers.
+Apple Health and Health Connect can hold readings from several devices at once: your phone, a watch, a ring, a workout app. MoveTogether counts **one** of them, the tracker you choose. Only that tracker counts toward your rings, competitions, leagues, and challenges.
 
-The steps below describe the iPhone **Data Sources** screen. The **Primary source** control appears when there are at least two eligible sources to choose between. A missing picker does not mean your only connected source is broken.
+## Why only one
 
-## Choose a source
+If you wear two trackers on the same walk, both record it. Adding them together would count that walk twice and reward owning more devices. Counting one tracker keeps every score fair.
+
+## Choose or change your tracker
+
+You pick your tracker during setup, when MoveTogether asks which one you use. To change it later on iPhone:
 
 1. Open **Settings → Data Sources**.
-2. Tap **Primary source**.
-3. Select your preferred provider, or choose **Automatic**.
-4. Wait for the selection to save. If the app shows a save error, try again before assuming the new choice is active.
-5. Refresh your activity after your tracker has synced.
+2. Find the card that says **We're counting your** followed by your device.
+3. Tap **Change** and choose another tracker.
 
-Your preference guides source selection when MoveTogether processes provider activity. It is not a promise that every historical total changes immediately.
+If the card says your tracker **hasn't synced recently**, tap **Get it syncing** for help, or open the device's own app and let it sync.
 
-## What the choices mean
+If your device isn't in the list, it isn't sharing into Apple Health or Health Connect yet. Follow the guide for [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker).
 
-| Choice | How daily provider activity is selected |
-| --- | --- |
-| Automatic | Use the activity provider selected by the integration's default ordering. |
-| A named primary source | Prefer that provider's daily activity when it has data indicating the device was used. |
-| Primary missing or apparently unused | Another source with recorded activity can be used for that day. |
-| All sources quiet | Keep the primary's available record, rather than treating a quiet day as a sync failure. |
+## Your tracker versus the health app's sources
 
-For this daily-provider selection, MoveTogether chooses one source's record as a whole. It does not add the steps from every provider together or combine one provider's steps with another provider's calories. Workout processing and other health metrics have their own rules.
+Changing your tracker in MoveTogether doesn't change which apps are allowed to write to Apple Health or Health Connect. On iPhone, manage those in the Health app under **Browse**, then the metric, then **Data Sources & Access**. On Android, manage them in Health Connect.
 
-**Example:** you normally wear a Garmin, but leave it at home and record a walk with another connected device. The preference can fall back for that day. Selecting Garmin is a preference, not a rule to discard all activity when Garmin has no usable record.
+## If totals look wrong
 
-## Primary source versus Apple Health contributors
+Compare the same date and metric on your chosen tracker. Active calories are not total calories, and Exercise minutes are not total workout time. Your MoveTogether total will often be lower than the Apple Health or Health Connect total, because those combine every device. See [why your numbers differ](/troubleshooting/why-numbers-differ-from-apple-health).
 
-Apple Health can contain readings from several apps and devices. In **Data Sources**, open a health metric to review its contributors. The contributor view lists recent writers; it is not the same control as your primary activity provider.
-
-To allow or block an Apple Health contributor, use the Health app's **Browse → the metric → Data Sources & Access** controls. Changing a primary activity provider does not change those Apple Health permissions.
-
-## If totals still look wrong
-
-First compare the same date and metric. Active calories are different from total calories; Exercise minutes are different from total workout duration. Confirm your preferred provider has finished syncing, then check its connection in Data Sources.
-
-If the wrong source appears to be used, tell [Marco support](/troubleshooting/contact-support) which source you selected, the date, and the metric affected. See [fitness data not syncing](/troubleshooting/sync-issues) for checks before reconnecting.
+If the wrong tracker seems to be counting, tell [Marco support](/troubleshooting/contact-support) which tracker you chose, the date, and the metric.

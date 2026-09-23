@@ -3,7 +3,7 @@ title: "Competition scoring reference"
 description: "Current MoveTogether competition scoring methods, exact daily formulas, caps, qualification rules, and worked examples."
 ---
 
-The host chooses one scoring method when creating a competition. Scores are calculated server-side from synced activity. A daily score is then added across the competition window.
+The host picks one of seven scoring modes when creating a competition: Ring Close Count, Percentage of Goals, Total Activity, Workout Count, Personal Goal, Stick To It, and Head to Head. Head to Head scores one metric (Step Count, Calorie Burn, or Exercise Minutes), so those three formulas appear in the table below. Scores are calculated on the server from synced activity, and each day's score is added across the competition window.
 
 ## Activity-based methods
 
@@ -16,7 +16,6 @@ The host chooses one scoring method when creating a competition. Scores are calc
 | Calorie Burn | active calories | No method cap |
 | Exercise Minutes | exercise minutes | No method cap |
 | Workout Count | 1 if one qualifying workout is present; otherwise 0 | Maximum 1 point per day; a single workout must be longer than 15 minutes |
-| WHOOP Strain | the connected WHOOP daily strain | Requires a connected WHOOP |
 
 **Example: Percentage of Goals.** With 50% Move, 100% Exercise, and 75% Steps progress, the day scores `50 + 100 + 75 = 225` points. Going to 150% of a ring goal still contributes 100, not 150.
 
@@ -30,7 +29,7 @@ The host selects Steps, Calories, or Exercise Minutes and sets an allowed range.
 
 **Example:** With a 10,000-step Personal Goal, 7,500 steps scores 75 points; 10,000 or 12,000 steps scores 100 points.
 
-Personal Goal and Stick To It are Pro-to-host formats. People can join them on any plan.
+Hosting Personal Goal and Stick To It needs Membership or Pro. Anyone can join them.
 
 ### Stick To It
 
@@ -44,6 +43,8 @@ In the create flow, **Head to Head** is the shortcut for choosing one raw metric
 
 ## Goals, caps, and fairness
 
-Your everyday Move, Exercise, and Steps goals affect Ring Close Count and Percentage of Goals. They do not alter raw-metric methods. Personal Goal uses the goal you lock for that competition, while Stick To It uses the host’s shared daily target.
+Every method is fair across devices. Every device's data reaches MoveTogether the same way, through Apple Health or Health Connect, and every method scores the same Move, Exercise, and Steps numbers. Each person's chosen tracker counts once, so wearing more devices never adds points.
+
+Your everyday Move, Exercise, and Steps goals affect Ring Close Count and Percentage of Goals. They don't change raw-metric methods. Personal Goal uses the goal you lock for that competition, and Stick To It uses the host's shared daily target.
 
 For a goal-based setup walkthrough, read [personal and shared goals](/competitions/personal-and-shared-goals). For a score that changes after a group vote, read [changing competition scoring](/competitions/changing-scoring).

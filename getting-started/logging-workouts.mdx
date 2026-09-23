@@ -3,42 +3,38 @@ title: "Logging workouts"
 description: "How workouts reach your rings, why MoveTogether has no manual entry, and what to check when a workout is missing."
 ---
 
-Workouts reach MoveTogether from the data source you connected. There is no way to type a workout in by hand, and there is no plus button on the Home screen. Everything on your rings comes from Apple Health, Health Connect, or a connected wearable service.
-
-When a workout is missing, the fix is to get the source syncing rather than to enter it again.
+Workouts reach MoveTogether from Apple Health (iPhone) or Health Connect (Android). There is no way to type a workout in by hand. When a workout is missing, get the source syncing rather than entering it again.
 
 ## How a workout becomes ring progress
 
 1. You record the workout on your watch, phone, or wearable app.
-2. That app writes it to Apple Health, Health Connect, or the service's own cloud.
+2. That app writes it to Apple Health or Health Connect.
 3. MoveTogether reads it from there and updates Move, Exercise, and Steps.
 
-MoveTogether shows what your data source recorded. If the workout is not in the source, it cannot appear here.
+If the workout isn't in Apple Health or Health Connect, it can't appear here.
 
 ## A workout is missing
 
 Check these in order.
 
-**Is it in the source app?** Open Apple Health, Health Connect, or your wearable's own app and find the workout. If it is not there, the workout was never recorded, and nothing in MoveTogether can recover it.
+**Is it in the wearable's app?** If not, it was never recorded, and MoveTogether can't recover it.
 
-**Is the source connected?** Go to **Settings → Data Sources** and check the status. See [Manage and troubleshoot data sources](/troubleshooting/data-sources).
+**Is it in Apple Health or Health Connect?** If not, turn on sharing in the wearable's app. See [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker).
 
-**Has it had time to sync?** Some services deliver on their own schedule rather than instantly. [Fitness data not syncing](/troubleshooting/sync-issues) covers the timing for each one.
+**Is it from the tracker that counts?** Only your chosen tracker counts. A workout recorded on a different device won't show up. See [choose which tracker counts](/getting-started/primary-activity-source).
 
-**Are permissions still granted?** A permission can be revoked in your system settings after you first allow it, and the app cannot tell you that directly. The data sources page explains how to re-check.
+**Are permissions still granted?** A permission can be revoked in your phone's settings after you first allow it. See [manage and troubleshoot data sources](/troubleshooting/data-sources).
+
+Then refresh. On iPhone, the red **+** button has **Sync activity**.
 
 ## Why there is no manual entry
 
-Rings and competition scores are built from measured activity. Typed-in numbers cannot be checked, and a competition where some scores are measured and others are asserted is not a fair competition.
-
-If you want a workout to count, record it in a connected source.
+Rings and competition scores are built from measured activity. Typed-in numbers can't be checked, and a competition where some scores are measured and others are typed in isn't fair.
 
 ## Exercise minutes look wrong
 
-Exercise minutes are credited by MoveTogether's own rules and can differ from the duration the source recorded. Walking and **Other** sessions need a minimum length and share a daily allowance, and overlapping sessions are merged rather than added together. A walk your phone detected on its own may therefore contribute less than its recorded time, or nothing, even though the steps still count.
-
-[Fitness data not syncing](/troubleshooting/sync-issues) carries the exact minimums, the daily allowance, and how a Workout Count competition scores differently again. The numbers live there rather than here, so there is only one copy to keep true.
+MoveTogether credits Exercise minutes by its own rules, which can differ from the recorded duration. Walking and **Other** sessions need a minimum length and share a daily limit, and overlapping sessions are merged. [Fitness data not syncing](/troubleshooting/sync-issues#my-workouts-sync-but-my-exercise-ring-looks-different) has the exact numbers.
 
 ## Still stuck
 
-If the workout is in your source app, the source is connected, and it still has not appeared after a day, contact support from **Settings → Contact Support**. Include the date and the app the workout was recorded in.
+If the workout is in Apple Health or Health Connect, came from your chosen tracker, and still hasn't appeared after a day, [contact support](/troubleshooting/contact-support). Include the date and the app that recorded the workout.
