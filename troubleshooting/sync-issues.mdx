@@ -1,55 +1,51 @@
 ---
 title: "Fitness data not syncing"
-description: "Check missing activity in order, understand Exercise credit from workouts, and distinguish delayed sync from scoring rules."
+description: "Find where missing activity stops, understand Exercise credit from workouts, and tell a sync delay from a scoring rule."
 ---
 
-Check the source before reconnecting. The useful question is where the expected reading stops appearing: on your tracker, in its companion app, in the phone's health service, or in MoveTogether.
+Your data travels in one line: tracker, then its own app, then Apple Health (iPhone) or Health Connect (Android), then MoveTogether. Find the step where the reading stops appearing.
 
-## Quick fix checklist
+## Quick checklist
 
-1. Open your tracker's companion app and let the device sync.
-2. Check that the expected reading is present for the affected date.
-3. Open **MoveTogether → Settings → Data Sources** and check connection status.
-4. Review any missing permissions or reconnect a paused provider.
-5. Return to the activity screen and pull to refresh.
-6. If the screen still seems stuck, check connectivity, update MoveTogether, and reopen the app.
+1. Open your tracker's own app and let the device sync.
+2. Check that the reading is in Apple Health or Health Connect for that date.
+3. In MoveTogether, open **Settings → Data Sources** and check which tracker is counting and whether access needs review.
+4. Pull to refresh. On iPhone you can also tap the red **+** button and choose **Sync activity**.
+5. Still stuck? Check your connection, update MoveTogether, and reopen the app.
 
-## iOS: Apple Health and Apple Watch
+## iPhone: Apple Health
 
-Check the iPhone Health app before MoveTogether. If Apple Watch data is missing there too, allow the Watch to sync first. If it is present in Health, review MoveTogether's access to the specific category.
+Check the Health app first. If the reading is missing there, the wearable hasn't shared it yet: sync the device, and check its [Apple Health sharing](/apple-health/connect-your-tracker). If it's in Health, check that MoveTogether can read that category.
 
-If your MoveTogether total is lower than the Apple Health app rather than missing, that is expected. See [why your numbers differ from Apple Health](/troubleshooting/why-numbers-differ-from-apple-health).
-
-An empty Apple Exercise value is not proof that a third-party tracker recorded no workout. Some devices provide workout sessions without an Apple Watch-style activity summary. MoveTogether can derive Exercise credit from eligible third-party workouts; the rules below explain why that credit can differ from the provider's total session time.
-
-## Connected providers
-
-Google Health / Fitbit, Garmin, WHOOP, Oura, Strava, Polar, and Ultrahuman use their provider connection. Check the companion app and then Data Sources. For multiple devices, review your [primary source](/getting-started/primary-activity-source): the selected daily record may differ from the device you are comparing against.
-
-For a WHOOP setup, verify both that workouts have arrived and that you are comparing active activity rather than the provider's total daily energy expenditure. Do not grant unrelated Apple Health access just to repair a provider connection.
+If your MoveTogether total is lower than the Health app, that's expected. See [why your numbers differ](/troubleshooting/why-numbers-differ-from-apple-health).
 
 ## Android: Health Connect
 
-Confirm the readings are present in Health Connect, then review MoveTogether's data-type permissions. Background and historical reads have their own permissions. See [Android public beta](/getting-started/android-public-beta) for the supported scope.
+Confirm the reading is in Health Connect, that your wearable's app can write it, and that MoveTogether can read it. Background and history reads are separate permissions. See [Connect your tracker to Health Connect](/health-connect/connect-your-tracker).
+
+## Wrong device counting
+
+Only your chosen tracker counts. If you're comparing against a different device, check [which tracker counts](/getting-started/primary-activity-source).
 
 ## My workouts sync, but my Exercise ring looks different
 
-Workout duration, credited Exercise minutes, and a competition's Workout Count score are different measurements.
+Workout duration, credited Exercise minutes, and a Workout Count score are different measurements.
 
-For third-party workouts imported through Apple Health, MoveTogether derives Exercise credit from eligible sessions. Walking and sessions categorized as **Other** need at least **10 minutes**. This crediting path does not require a distance reading or a minimum walking pace.
+For third-party workouts, MoveTogether credits Exercise minutes from eligible sessions:
 
-Walking/Other sessions share an allowance of up to **60 additional minutes per day** in this path. Overlapping sessions are not simply added together: a walk recorded during another workout does not give you a second copy of those minutes. Other eligible workout types contribute their non-overlapping duration.
+- Walking and **Other** sessions need at least **10 minutes**. No distance or minimum pace is required.
+- Walking and Other sessions share a limit of **60 extra minutes per day**.
+- Overlapping sessions aren't added together. A walk recorded during another workout doesn't earn the minutes twice.
+- Other eligible workout types add their non-overlapping time.
 
-**Example:** two non-overlapping eligible walking sessions of 40 minutes each do not produce 80 additional Exercise minutes in this path; the daily walking/Other contribution is capped at 60. A qualifying 12-minute walk can contribute Exercise minutes even though it does not meet the separate Workout Count scoring rule.
+**Example:** two separate 40-minute walks don't add 80 minutes; walking and Other are capped at 60 for the day. A 12-minute walk can add Exercise minutes even though it doesn't meet the Workout Count rule.
 
-These are rules for this workout-crediting path, not a promise that every provider reports or processes Exercise identically. Apple activity summaries and direct provider readings can differ. For a **Workout Count competition**, a day scores at most one point and needs a single workout **longer than 15 minutes**. See the [scoring reference](/competitions/scoring-reference).
+For a **Workout Count** competition, a day scores at most one point and needs one workout **longer than 15 minutes**. See the [scoring reference](/competitions/scoring-reference).
 
-## Rings updated, but a score or challenge has not
+## Rings updated, but a score or challenge hasn't
 
-Refresh the competition or challenge after activity syncs. Then check its rule and date window. A daily cap, goal threshold, different scoring method, or a completed competition can explain why additional activity does not add the points you expected.
+Refresh the competition or challenge after activity syncs, then check its rules and dates. A daily cap, a goal threshold, a different scoring method, or a finished competition can explain it. See [competition troubleshooting](/troubleshooting/competition-issues) and [daily challenges](/engagement/daily-challenges).
 
-Use [competition troubleshooting](/troubleshooting/competition-issues) for scores and [daily challenges](/engagement/daily-challenges) for challenge progress.
+## Still missing
 
-## If data still does not appear
-
-Contact [Marco support](/troubleshooting/contact-support) with the date, metric, source, phone model, app version, and any error message. Say whether the reading appears in the provider app or Health service and which primary source you selected. Share account or health details only through the private support flow.
+Contact [Marco support](/troubleshooting/contact-support) with the date, metric, tracker, phone model, app version, and any error message. Say whether the reading appears in the tracker's app and in Apple Health or Health Connect.

@@ -55,6 +55,8 @@
               "getting-started/android-public-beta",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
+              "apple-health/connect-your-tracker",
+              "health-connect/connect-your-tracker",
               "getting-started/primary-activity-source",
               "getting-started/logging-workouts",
               "getting-started/setting-goals",
@@ -142,7 +144,6 @@
             "pages": [
               "troubleshooting/sync-issues",
               "troubleshooting/data-sources",
-              "apple-health/connect-your-tracker",
               "troubleshooting/why-numbers-differ-from-apple-health",
               "troubleshooting/competition-issues",
               "troubleshooting/notification-problems",
