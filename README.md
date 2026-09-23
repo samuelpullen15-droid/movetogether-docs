@@ -12,7 +12,7 @@ The September 2026 parity pass used MoveTogether main `55065e5cc209a293bc783a51e
 | --- | --- | --- |
 | Competition rules | `supabase/functions/_shared/competition-scoring.ts`, current admission/host-limit migrations, iOS create wizard | `competitions/scoring-reference.mdx` |
 | Streaks and badges | Current streak recomputation migrations, `StreakCard.swift`, Watch streak views | `engagement/streaks-shields.mdx` |
-| Activity sources | `DataSourcesView.swift`, `_shared/openwearables.ts`, `_shared/workout-exercise-minutes.ts` | `getting-started/primary-activity-source.mdx` |
+| Activity sources | `DataSourcesView.swift`, `YourTrackerCard.swift`, `WearableAppleHealthGuide.swift`, `_shared/workout-exercise-minutes.ts` | `getting-started/connect-tracker.mdx`, `getting-started/primary-activity-source.mdx` |
 | Challenges | Current daily calibration and monthly standings migrations, Challenges UI | `engagement/daily-challenges.mdx`, `engagement/monthly-challenges.mdx` |
 | Coaching | Coach settings/views, `ai-coach`, help lane, coach reward configuration | `social-coach/coach-mo.mdx` |
 | Social access | `stream-chat-token`, `stream-communities`, activity API, reaction models | `social-coach/direct-messaging.mdx`, `subscriptions/plans.mdx` |
