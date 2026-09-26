@@ -28,9 +28,6 @@
   "integrations": {
     "gtm": {
       "tagId": "GTM-N8T99VWS"
-    },
-    "intercom": {
-      "appId": "xwnuvlp2"
     }
   },
   "redirects": [
