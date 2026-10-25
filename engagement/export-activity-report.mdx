@@ -1,47 +1,65 @@
 ---
 title: "Export an activity report"
-description: "Create a CSV report on iPhone or Android with custom dates, selected activity metrics, daily rows, totals, and averages; distinguish it from account export."
+description: "Create a CSV spreadsheet of your daily activity on iPhone or Android: pick dates and metrics, then save or share the file. Free on every plan."
 ---
 
-An activity report turns your recorded daily activity into a **CSV spreadsheet** that opens in Numbers, Excel, or Google Sheets. It's available on every plan.
-
-The report works the same way on iPhone and Android. It's separate from both your Weekly Mo Report and the emailed account-data export.
+An activity report is a **CSV spreadsheet** of your daily activity. It opens in Numbers, Excel, Google Sheets, or any spreadsheet app. It's free on every plan, and works the same way on iPhone and Android.
 
 ## Create your report
 
-1. Open **Settings** and, under **Data**, tap **Export a report**.
-2. Choose **Last 7 days**, **Last 30 days**, **Last month**, or **Last 90 days**, or set **From** and **To** dates.
-3. Wait for **What to include** to refresh for those dates.
-4. Select the available metrics you want in the file.
-5. Tap **Create my report** and wait for **Your report is ready**.
-6. Tap **Save or share the file** to choose a destination.
+1. Open **Profile** and tap the gear icon to open **Settings**.
+2. Under **Data**, tap **Export a report**.
+3. Under **Dates**, tap **Last 7 days**, **Last 30 days**, **Last month**, or **Last 90 days**. Or set your own **From** and **To** dates.
+4. Under **What to include**, turn on the metrics you want. Move, Exercise, and Steps start switched on.
+5. Tap **Create my report**.
+6. When you see **Your report is ready**, tap **Save or share the file** and choose where it goes.
 
-Changing the date range changes which metrics are available. Check the selection again before creating a new report.
+If you change the dates, the list under **What to include** updates. Check your choices again before you create another report.
 
-## Choose dates deliberately
+## Pick your dates
 
-The rolling 7-, 30-, and 90-day presets end yesterday, avoiding an incomplete today. **Last month** means the previous whole calendar month, not the previous 30 days.
+| Choice | Dates it covers |
+| --- | --- |
+| **Last 7 days**, **Last 30 days**, **Last 90 days** | That many days, ending yesterday |
+| **Last month** | The whole previous calendar month |
+| **From** and **To** | Any range up to 366 days, and it can include today |
 
-Custom dates can include today, but today's values can still change as you move and sync. A single report can cover up to **366 days**, counting both endpoints. Dates refer to the local activity days recorded by the app.
+The report starts on the last 30 days. Today's numbers can still change as you move and sync, which is why the presets end yesterday.
 
-## What the spreadsheet contains
+## What to include
 
-The report includes daily rows for the selected period and summary totals and averages. Available columns depend on your stored data, such as activity, workouts, distance, sleep, or heart rate. Use the column headers for the units; exported distance, for example, is labeled in metres.
+Only metrics with a reading above zero in your dates are listed, so the list changes with your dates. A missing metric means there's no recorded value in those dates, not that your device can't measure it.
 
-Only metrics with a positive reading somewhere in the chosen period are offered. A missing choice does not prove your device has no capability to measure it; there may be no recorded value for those dates.
+The metrics you can choose are:
 
-Missing readings are different from measured zero. Check the report's coverage rather than assuming every day has a complete set of metrics. Heart-rate values are averaged rather than summed; adding daily heart rates would not be meaningful.
+- Move calories, Exercise minutes, Steps, Workouts
+- Distance (metres), Stand hours
+- Sleep, Deep sleep, REM sleep, Light sleep, and Awake (all in minutes)
+- Average, Max, and Min heart rate (bpm)
 
-## Choose the right report
+## What's in the file
+
+- **At the top:** your name, the period, how many days are in it, how many days have data, and when you made the report.
+- **A summary table:** each metric's total, its average per day with data, and how many days have data. Heart rate has an average only, because adding heart rates together doesn't mean anything.
+- **One row per day**, with a column for each metric you chose.
+
+Days your tracker missed are left blank, not zero. Averages only count days with data.
+
+**Example:** You export the last 7 days, and your tracker missed Tuesday. **Your report is ready** says 6 of 7 days have data. The Tuesday row is blank, and your Steps average is your 6 days' total divided by 6.
+
+## Choose the right export
 
 | What you need | Use |
 | --- | --- |
-| A spreadsheet of selected daily activity | **Export a report** |
-| A copy of your account data | [Download my data](/account/data-and-privacy#downloading-your-data), delivered by email as an account snapshot |
-| Coach Mo's interpretation of your week | [Weekly Mo Report](/engagement/weekly-report), opened in the app |
+| A spreadsheet of your daily activity | **Export a report** |
+| A copy of all your account data | [Download my data](/account/data-and-privacy#downloading-your-data), sent by email |
+| Coach Mo's take on your week | [Weekly Mo Report](/engagement/weekly-report), in the app |
 
-## Troubleshooting
+## Something not right?
 
-If you see **No activity was recorded in these dates**, try a range containing known synced activity. If a column is absent, check that metric in [Data Sources](/troubleshooting/data-sources).
+- **You see No activity was recorded in these dates.** Try a wider range that includes days you know synced.
+- **A metric is missing.** It had no reading in those dates. Check it in [Data Sources](/troubleshooting/data-sources).
+- **You see You've made a few reports in a row.** You can make 10 reports an hour. Wait an hour and try again.
+- **Creating the report failed.** Check your connection and tap **Create my report** again.
 
-If report creation fails, keep the dates and selection you intended, check connectivity, and retry after the error clears. Saving a downloaded CSV does not keep it connected to live data: create another report after a later sync if you need updated numbers.
+A saved file doesn't update. If more activity syncs later, create a new report.
