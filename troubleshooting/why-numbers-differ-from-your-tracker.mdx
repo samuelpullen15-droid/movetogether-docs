@@ -1,0 +1,54 @@
+---
+title: "Why your numbers don't match your tracker's app"
+description: "On iPhone, your WHOOP, Garmin, or Oura app and MoveTogether can show different numbers for the same day. Here's whose number you're seeing, and what to check."
+---
+
+<Note>
+  This page is about iPhone. For Android, see [why your numbers differ from Health Connect](/troubleshooting/why-numbers-differ-from-apple-health).
+</Note>
+
+Your tracker sends its data to Apple Health, and MoveTogether reads it from there. Most days your numbers line up with your tracker's app. When they don't, it's usually one of the reasons below.
+
+## Your tracker hasn't synced yet
+
+Your tracker's app has to send today's data to Apple Health before MoveTogether can see it. Some tracker apps only do that when you open them.
+
+Until it arrives, MoveTogether counts another device for that ring so it doesn't sit at zero: your Apple Watch if you have one, otherwise whichever device recorded the most. Say you chose WHOOP and timed a run in Garmin Connect. If WHOOP hasn't synced yet, your Move can show Garmin's calories for a while.
+
+When your tracker syncs, MoveTogether counts the day again and your competitions update on their own. Recent days keep updating for about two days. After that, a day is final.
+
+**To check:**
+
+1. Open **Settings → Data Sources**.
+2. Under **Health Data**, each row shows what your chosen tracker sent today. A dash means it hasn't sent anything for that yet.
+3. Open your tracker's app and let it sync.
+4. Come back to MoveTogether and pull to refresh.
+
+## No Apple Watch: Move can include more than your tracker
+
+Without an Apple Watch, Apple Health keeps its own Move total for your day. It adds your iPhone's movement to workouts from any app that writes to Apple Health, like Garmin Connect or Strava.
+
+MoveTogether uses whichever is higher for Move: your tracker's active calories, or Apple Health's Move total. So your Move can read higher than your tracker's app, even after your tracker syncs.
+
+Steps and Exercise come from your tracker.
+
+## With an Apple Watch: Move matches your Watch
+
+On days you wear your Apple Watch, your Move is your Watch's Move ring, the same number you see in the Fitness app. That's true even if you chose a different tracker. Steps and Exercise come from the tracker you chose.
+
+## Your tracker's app shows one workout, not your day
+
+Many tracker apps show the calories for each workout. MoveTogether's Move is your active calories for the whole day so far. A run that burned 505 calories in your tracker's app won't match your day's Move.
+
+Also check that you're comparing active calories. Some apps show total calories, which include what your body burns at rest, so they read much higher.
+
+## The same workout shows up twice
+
+If two apps record the same workout, like WHOOP and Garmin Connect, it can appear twice in your activity. It doesn't earn extra points. Workout Count scores at most 1 point a day, and Distance counts a run saved by two apps once. See the [scoring reference](/competitions/scoring-reference).
+
+## Still doesn't match?
+
+- Compare the same day and the same metric.
+- Wait for your tracker to sync, then pull to refresh.
+- To change which tracker counts, see [choose which tracker counts](/getting-started/primary-activity-source).
+- If it still looks wrong, tell [the support chat](/troubleshooting/contact-support) your tracker, the date, the metric, and both numbers.
