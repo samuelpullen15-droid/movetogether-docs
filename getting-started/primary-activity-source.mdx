@@ -1,10 +1,10 @@
 ---
 title: "Choose which tracker counts"
-description: "On iPhone, pick the one tracker that counts toward your rings, change it later in Data Sources, and see what counts while your tracker hasn't synced. Android works differently."
+description: "On iPhone, pick the one tracker that counts toward your rings, change it later in Data Sources, and see what counts while your tracker hasn't synced. Android has a tracker picker too, with a few differences."
 ---
 
 <Note>
-  This page is about iPhone. Android has no tracker to pick: it uses Health Connect's own combined total, and Health Connect's app priority decides which app counts when two record the same activity. See [Connect your tracker to Health Connect](/health-connect/connect-your-tracker).
+  Most of this page is about iPhone. Android has a tracker picker too, and it works a little differently. See [On Android](#on-android).
 </Note>
 
 Apple Health can hold readings from several devices at once: your iPhone, a watch, a ring, a workout app. MoveTogether counts **one** of them, the tracker you choose, for your Move, Exercise, and Steps rings. Those numbers are what your competitions, leagues, and challenges use.
@@ -40,3 +40,32 @@ Changing your tracker in MoveTogether doesn't change which apps are allowed to w
 Compare the same date and metric on your chosen tracker. Active calories are not total calories, and Exercise minutes are not total workout time. Your Steps and Exercise will often be lower than Apple Health's, because Apple Health combines every device. If they don't match your tracker's own app, see [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker). Steps and workouts you type in by hand don't count in MoveTogether. See [why your numbers differ](/troubleshooting/why-numbers-differ-from-apple-health).
 
 If the wrong tracker seems to be counting, tell [the support chat](/troubleshooting/contact-support) which tracker you chose, the date, and the metric.
+
+## On Android
+
+Android has a **Your tracker** picker too. Health Connect knows which app wrote each reading, not which device, so you pick an app. A Galaxy Watch and a Galaxy phone both write as Samsung Health, so they're one choice.
+
+1. Open **Settings → Data Sources**.
+2. Under **Your tracker**, tap **Choose your tracker**, or tap **Change** if the card says **We're counting your** followed by your tracker.
+3. Pick the device you actually wear.
+
+The list shows the apps that wrote activity to Health Connect in the last 7 days. If yours isn't there, it isn't sharing into Health Connect yet. Follow the [Health Connect guide](/health-connect/connect-your-tracker).
+
+New members are asked during setup. If you used MoveTogether on Android before the picker arrived, it asks you once. Tap **Not now** to skip and pick later in Data Sources.
+
+### What counts on Android
+
+- **Steps and calories:** your tracker's number for the day. If your tracker didn't record that metric that day, MoveTogether uses Health Connect's combined total for it, so a day you left your watch at home doesn't read zero.
+- **Exercise:** on a day your tracker recorded anything, Exercise minutes come from its workouts. On other days, workouts from every app count.
+- **Workout Count competitions:** workouts from any app still count.
+- **No tracker picked:** Health Connect's combined total counts every day. Health Connect's app priority decides which app counts when two record the same activity.
+
+Steps and workouts you type in by hand never count.
+
+### A new pick counts from today
+
+When you pick or change your tracker, today and later days follow it. Days that already ended keep the numbers they had, so changing your tracker doesn't rewrite last week.
+
+### On a new phone
+
+If your tracker is Garmin, Oura, WHOOP, or Polar, your pick is saved to your account and comes back when you sign in on a new phone. It counts from the day it comes back. For any other app, pick it again in **Settings → Data Sources**.
