@@ -1,101 +1,119 @@
 ---
-title: "Your data and privacy"
-description: "What MoveTogether collects to provide fitness features, which service providers receive it, how to export or delete your data, and where to send privacy requests."
+title: "Download or delete your data"
+description: "What MoveTogether keeps about you, who helps us run the app, how to download a copy of your account, and what happens when you delete it."
 ---
 
-MoveTogether uses your account, activity, fitness, and social information to provide rings, competitions, leaderboards, coaching, and related features. Health and fitness data is sensitive: we do not sell it or use it for advertising.
+MoveTogether keeps the information it needs to run your rings, competitions, leaderboards, and coaching. We don't sell your personal or health data, and we never use health or fitness data for advertising. You can download a copy of your data or delete your account at any time, on every plan, on iPhone and Android.
 
-## What MoveTogether uses
+## What MoveTogether keeps
 
-- **Account information:** your name, email address, username, profile photo, and the account settings you choose.
-- **Fitness information:** activity totals, workouts, goals, and other health metrics you allow MoveTogether to read from Apple Health or Health Connect.
-- **Competition and social information:** scores, rankings, participation history, friendships, posts, and messages needed for the features you use.
-- **Product diagnostics:** app events, masked session replays, crash details, and performance information when you opt in to product analytics.
+- **Account:** your name, email, username, photo, and the settings you choose.
+- **Fitness:** activity totals, workouts, goals, and other health numbers you allow MoveTogether to read from Apple Health or Health Connect. MoveTogether never writes changes back to them.
+- **Competitions and social:** scores, rankings, history, friends, posts, and messages.
+- **Diagnostics:** app events, masked session replays, and crash details, only while **Help improve MoveTogether** is on.
 
-## Sources, sharing, and providers
-
-| Area | How it is used or shared |
-| --- | --- |
-| Health data | Apple Health (iPhone) and Health Connect (Android) provide the data you authorize. MoveTogether stores the copies needed for scores, leaderboards, activity history, badges, and coaching; it does not write changes back to the original source. |
-| Competitions and social features | Competition participants can see the leaderboard information and competition details you share. Friends can see activity you share in social features. |
-| Product analytics | When you turn on **Help improve MoveTogether**, PostHog can receive your persistent account UUID, usage events, masked session replay, and crash or performance diagnostics. |
-| Social infrastructure | Stream receives the identity and content needed for chat, communities, feeds, and moderation. It also carries the live video when you [share your screen with support](/troubleshooting/screen-share), which is not recorded. |
-| Coaching | Anthropic receives Coach Mo text context with direct names replaced by placeholders and without your MoveTogether user ID. ElevenLabs processes Coach Mo voice. See [AI and your data](/account/ai-and-your-data). |
-| Support | The in-app support chat runs on Chatwoot. When you chat while signed in, Chatwoot receives your MoveTogether user ID, email address, first name, an account verification code, subscription tier, time zone, and account sign-up date so support can recognize your account. Our AI support agent, run by Skydive and powered by Anthropic's Claude, may answer first, and a member of our team can take over. |
-
-MoveTogether and its providers process the information needed to operate these features. We do not sell personal or health data.
-
-## Your controls
-
-Open **Settings → Privacy Settings** to manage sharing, friend-request controls, product analytics, blocked users, and account deletion.
-
-- **Export (iPhone):** tap **Download my data** to request a copy of the data associated with your account. The app emails a download link when the export is ready. This account export is a JSON download; it is separate from an [activity report CSV](/engagement/export-activity-report).
-- **Delete:** tap **Delete account** to request permanent deletion of your account and associated data. Review the confirmation carefully because this cannot be undone.
-- **Coach Mo:** delete individual conversations, all conversations, or Files from Coach Mo settings without deleting the rest of your account.
-- **Ad tracking (iPhone):** you can request or manage advertising tracking permission in Privacy Settings, and change it later in iPhone Settings.
-
-Your data is stored using industry-standard encryption. All connections between your device and our servers are encrypted. Competition scores are calculated server-side to prevent manipulation. Our security model means your data is only accessible through authenticated, validated server requests.
+Other members see only what your [Privacy Settings](/account/privacy-settings) allow.
 
 ## Downloading your data
 
-<Tabs>
-  <Tab title="iPhone">
-    Go to **Settings → Privacy Settings → Download my data** and tap **Send to my email**. You'll get an email with a download link when the export is ready. It can take a few minutes, and the link expires after 7 days. The account export is JSON. It is different from the [activity report CSV](/engagement/export-activity-report), which is designed for selected activity dates and metrics.
-  </Tab>
-  <Tab title="Android">
-    The Android app doesn't have an account export button. To request a copy of your data, email [**privacy@movetogetherfitness.com**](mailto:privacy@movetogetherfitness.com) or ask in the [support chat](/troubleshooting/contact-support).
-  </Tab>
-</Tabs>
+1. Open **Settings**.
+2. Under **Privacy**, tap **Privacy Settings**.
+3. Tap **Download my data**.
+4. Tap **Send to my email**.
+
+You get an email with a download link. It can take a few minutes. The link expires after 7 days.
+
+Your export is a JSON file (a structured text file). It includes:
+
+- Your profile, username, and avatar
+- Your competition history from the last 12 months
+- Your activity rings and streak data
+- Your friends list and the direct messages you sent
+- The achievements and badges you've earned
+
+You can request up to three exports an hour. Friends in your export appear the way the app shows them to you, by first name and last initial.
+
+The export is different from an [activity report](/engagement/export-activity-report), which is a spreadsheet of the dates and numbers you pick.
 
 ## Deleting your data
 
-To delete your account and associated data, go to **Settings → Privacy Settings → Delete account** and follow the confirmation steps. This is permanent and cannot be undone. MoveTogether deletes or de-identifies the account data within 30 days, except where retention is required by law or needed for fraud prevention, abuse prevention, or dispute resolution.
+Deleting your account is permanent. It can't be undone, and signing up again starts from nothing.
 
-Revoking a health permission or disconnecting a source stops future reads covered by that permission or connection. It does not erase copies already stored in your MoveTogether account. Delete the account to request deletion of stored account data.
+<Warning>
+  Deleting your account doesn't cancel a subscription you pay for through the App Store or Google Play. Cancel it there too. See [Manage your subscription](/subscriptions/managing).
+</Warning>
 
-## Privacy requests
+1. Open **Settings**.
+2. Under **Privacy**, tap **Privacy Settings**.
+3. Scroll to the bottom and tap **Delete account**.
+4. Read what will be deleted.
+5. Type **DELETE** in capital letters.
+6. Tap **Delete account** (iPhone) or **Delete my account** (Android).
 
-For privacy questions or requests, such as access to or deletion of your data, email [**privacy@movetogetherfitness.com**](mailto:privacy@movetogetherfitness.com) or contact us through the [in-app support chat](/troubleshooting/contact-support). We may need to verify your identity before acting on a request.
+You can also delete your account on the web. Sign in at [MoveTogether account controls](https://movetogetherfitness.com/portal/account) and choose **Delete account**.
 
-## Third-party services
+### What happens next
 
-MoveTogether uses these service providers and third parties. Some apply only to specific versions or platforms of the app, or only to the website. This list matches section 4 of our [Privacy Policy](https://movetogetherfitness.com/privacy), which also lists the data each one receives.
+- You see **Deletion requested** and you're signed out on every device.
+- A confirmation email is sent to you.
+- Within 30 days, we delete or de-identify your personal data. That includes your profile, activity and health data, competitions, friends, blocked users, messages, and Coach Mo history.
+- Your photos are deleted: profile photo, competition covers, and photos you sent in direct messages.
+- We ask our providers to erase you too. That covers your chat data at Stream, your support chats in Chatwoot, your email contact records (Resend and Customer.io), and your subscription record at RevenueCat.
+- If support filed a ticket for you, the ticket stays so we can still fix the problem. We replace its title and description with a deletion notice.
 
-| Service | Purpose |
-|---------|---------|
-| Apple | Sign in with Apple, HealthKit, push notifications (APNs), and App Store purchases |
-| Google / Android Health Connect | Sign in with Google, Android Health Connect, and AdMob ads with consent (UMP) where required |
-| Meta | Ad delivery, aggregate SKAdNetwork reporting, and configured Tenjin measurement postbacks |
-| TikTok | Ad delivery, aggregate SKAdNetwork reporting, and configured Tenjin measurement postbacks |
-| Tenjin | Install, session, and limited conversion attribution, only after you allow tracking (ATT) |
-| Supabase | Database, authentication, file storage, and backend functions |
-| PostHog | Product analytics, session replay, and diagnostics, when **Help improve MoveTogether** is on |
-| RevenueCat | Subscription management and Apple Search Ads attribution |
-| Stripe | Website subscription payments and billing |
-| Tremendous | Delivering Movecoins gift cards and letting you choose the brand |
-| Stream (getstream.io) | Chat, communities, feeds, content moderation (text and images), and support screen sharing |
+We may keep some records where the law requires it, or to settle disputes or prevent fraud. For example, Movecoins gift card records are kept for 3 years, without your email address or a link to your account. See section 5 of the [Privacy Policy](https://movetogetherfitness.com/privacy).
+
+### Removing health data without deleting your account
+
+You can't delete single days, workouts, or numbers while your account is active. Turning off a permission in Apple Health or Health Connect stops new reads, but it doesn't erase what MoveTogether already stored. To remove stored health data, delete your account.
+
+### Unfinished accounts
+
+If you create an account but never finish setting it up, and then don't open the app for 30 days, we delete the account. We email you at least 7 days before. Opening the app (and signing in, if asked) keeps it. We never delete an account this way if it has a paid plan or trial, any activity, friends, or competitions.
+
+## Other privacy requests
+
+For a privacy question or request, email [**privacy@movetogetherfitness.com**](mailto:privacy@movetogetherfitness.com) or use the [in-app support chat](/troubleshooting/contact-support). We may need to confirm it's you before we act.
+
+## Who helps us run MoveTogether
+
+These providers process data on our behalf. Some apply only to certain app versions, to one platform, or to the website. This list follows section 4 of our [Privacy Policy](https://movetogetherfitness.com/privacy), which also lists the data each one receives.
+
+| Provider | What it does |
+| --- | --- |
+| Apple | Sign in with Apple, Apple Health, push notifications, App Store purchases, and Apple Intelligence for Coach Mo replies if you turn it on |
+| Google | Sign in with Google, Health Connect, and contextual AdMob ads with Google's consent tool where required |
+| Meta and TikTok | Ad delivery and aggregate install reporting. They get no account, health, or competition data |
+| Tenjin | Install measurement for iPhone app versions before 2.1.2, only if you allowed tracking. Version 2.1.2 and later don't track |
+| Supabase | Database, sign-in, file storage, and server functions |
+| PostHog | Product analytics, masked session replay, and diagnostics, while **Help improve MoveTogether** is on |
+| RevenueCat | Subscriptions and Apple Search Ads attribution |
+| Stripe | Website subscription payments |
+| Tremendous | Delivering Movecoins gift cards |
+| Google Firebase App Check | Confirming that Movecoins and activity sync requests come from the real app |
+| Stream | Chat, communities, feeds, moderation of text and images, and live screen sharing with support (not recorded) |
 | OneSignal | Push notifications |
-| Anthropic (Claude) | Coach Mo AI coaching, insights, and reports, and AI-assisted support |
+| Anthropic (Claude) | Coach Mo coaching, insights, and reports, and our AI support agent |
 | ElevenLabs | Coach Mo voice, where available |
-| Chatwoot | Live chat and support email, in the app, on the website, and in the account portal |
-| Skydive | Runs our AI support agent, which reads support chats and emails passed on by Chatwoot and may reply first |
-| Slack | Our internal workspace, where support conversations are shared so our team and our support agent can follow and reply |
-| Intercom | Support conversations and tickets from before support moved to Chatwoot (no new conversations) |
-| Twilio | SMS phone-number verification |
-| Resend | Transactional email, permitted marketing email, and The Board email for people who opt in |
-| Wearable-sync service provider | Syncing wearable accounts connected directly before app version 2.1.1, during their retirement period |
-| Linear | Support ticketing |
-| Giphy | GIFs in chat |
-| Open-Meteo | Weather data for location-based insights |
-| Cloudflare | Secure relay for voice conversations |
-| Quackback | Feature-request and feedback portal |
+| Chatwoot | The support chat and support email, in the app, on the website, and in the account portal |
+| Skydive | Runs our AI support agent, Marco, which may answer support chats first |
+| Slack | Our team's workspace, where support chats and feature ideas are shared so our team can follow up |
+| Linear | Support tickets for our engineering team, without your name, email, or user ID |
+| Intercom | Old support conversations from before we moved to Chatwoot. Nothing new goes there |
+| Twilio | Text message codes to verify your phone number |
+| Resend | Transactional email and marketing email you agreed to |
+| Customer.io | Account email, such as welcome email and the warning before an unfinished account is deleted |
+| Railway | Hosted our old direct wearable sync, which ended October 9, 2026. Its data has been deleted |
+| Giphy | GIF search in chat |
+| Open-Meteo | Weather for location-based insights |
+| Cloudflare | A secure relay for voice conversations |
 | Vercel | Website hosting and website analytics |
-| Ahrefs (Web Analytics) | Cookieless analytics on the public marketing site |
-| Searchable | Optional analytics on the public marketing site, measuring traffic from AI assistants and AI search tools |
-| Microsoft Clarity | Optional analytics, heatmaps, masked session replay, performance, and diagnostics on the public marketing site |
-| Google Analytics (Google) | Optional analytics on the public marketing site |
-| Reddit (Reddit pixel) | Optional advertising measurement on the public marketing site, only where you consent to advertising cookies |
+| Ahrefs, Searchable, Microsoft Clarity, Google Analytics, and Reddit | Analytics and ad measurement on the public website only. The optional ones load only with your cookie consent |
 
-Each service has its own privacy policy. For full details, read our [Privacy Policy](https://movetogetherfitness.com/privacy).
+Each provider has its own privacy policy. For the full details, read our [Privacy Policy](https://movetogetherfitness.com/privacy). For how AI features use your data, see [AI and your data](/account/ai-and-your-data).
 
-See [Privacy Settings](/account/privacy-settings), [AI and your data](/account/ai-and-your-data), and the [Privacy Policy](https://movetogetherfitness.com/privacy) for more detail.
+## Something not right?
+
+- **The export email didn't arrive:** check spam, wait a few minutes, then tap **Send another export**. If it still doesn't come, ask in the [in-app support chat](/troubleshooting/contact-support).
+- **Delete won't go through:** check that you typed **DELETE** in capitals. Deletion is limited to three tries an hour.
+- **You can't sign in to delete:** contact us through [MoveTogether support](https://movetogetherfitness.com/contact) or email privacy@movetogetherfitness.com.
