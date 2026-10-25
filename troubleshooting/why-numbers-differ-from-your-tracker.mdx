@@ -1,36 +1,39 @@
 ---
-title: "Why your numbers don't match your tracker's app"
-description: "On iPhone, your WHOOP, Garmin, or Oura app and MoveTogether can show different numbers for the same day. Here's whose number you're seeing, and what to check."
+title: "My numbers don't match my tracker's app"
+description: "Why your WHOOP, Garmin, Oura, or other tracker's app and MoveTogether can show different numbers for the same day, and what to check."
 ---
 
-<Note>
-  This page is about iPhone. For Android, see [why your numbers differ from Health Connect](/troubleshooting/why-numbers-differ-from-apple-health).
-</Note>
+This page is for when MoveTogether doesn't match your watch's or ring's own app, like Garmin Connect, Oura, or WHOOP. If it doesn't match Apple Health or Health Connect instead, see [my numbers don't match Apple Health or Health Connect](/troubleshooting/why-numbers-differ-from-apple-health).
 
-Your tracker sends its data to Apple Health, and MoveTogether reads it from there. Most days your numbers line up with your tracker's app. When they don't, it's usually one of the reasons below.
+Your tracker's app sends its data to Apple Health (iPhone) or Health Connect (Android), and MoveTogether reads it from there. Most days your numbers line up. When they don't, it's usually one of the reasons below.
 
 ## Your tracker hasn't synced yet
 
-Your tracker's app has to send today's data to Apple Health before MoveTogether can see it. Some tracker apps only do that when you open them.
+Your tracker's app has to send today's data to Apple Health or Health Connect before MoveTogether can see it. Some tracker apps only do that when you open them.
 
-Until it arrives, MoveTogether counts another device for that ring so it doesn't sit at zero: your Apple Watch if you have one, otherwise whichever device recorded the most. Say you chose WHOOP and timed a run in Garmin Connect. If WHOOP hasn't synced yet, your Move can show Garmin's calories for a while.
+Until it arrives, MoveTogether counts another device so your ring doesn't sit at zero:
+
+- **iPhone:** your Apple Watch if you have one, otherwise whichever device recorded the most. Say you chose WHOOP and timed a run in Garmin Connect. If WHOOP hasn't synced yet, your Move can show Garmin's calories for a while.
+- **Android:** Health Connect's combined total for the day.
 
 When your tracker syncs, MoveTogether counts the day again and your competitions update on their own. Recent days keep updating for about two days. After that, a day is final.
 
 **To check:**
 
-1. Open **Settings → Data Sources**.
+1. Open **Settings** > **Data Sources**.
 2. Under **Health Data**, each row shows what your chosen tracker sent today. A dash means it hasn't sent anything for that yet.
 3. Open your tracker's app and let it sync.
 4. Come back to MoveTogether and pull to refresh.
 
-## No Apple Watch: Move can include more than your tracker
+<Note>
+  On iPhone, a recent day's steps can go up but not down. If another device's higher steps counted before your tracker synced, the higher number stays. See [my steps went up and won't come down](/troubleshooting/sync-issues#my-steps-went-up-and-wont-come-down-iphone).
+</Note>
+
+## No Apple Watch: Move can include more than your tracker (iPhone)
 
 Without an Apple Watch, Apple Health keeps its own Move total for your day. It adds your iPhone's movement to workouts from any app that writes to Apple Health, like Garmin Connect or Strava.
 
-MoveTogether uses whichever is higher for Move: your tracker's active calories, or Apple Health's Move total. So your Move can read higher than your tracker's app, even after your tracker syncs.
-
-Steps and Exercise come from your tracker.
+MoveTogether uses whichever is higher for Move: your tracker's active calories, or Apple Health's Move total. So your Move can read higher than your tracker's app, even after your tracker syncs. Steps and Exercise still come from your tracker.
 
 ## With an Apple Watch: Move matches your Watch
 
@@ -51,4 +54,4 @@ If two apps record the same workout, like WHOOP and Garmin Connect, it can appea
 - Compare the same day and the same metric.
 - Wait for your tracker to sync, then pull to refresh.
 - To change which tracker counts, see [choose which tracker counts](/getting-started/primary-activity-source).
-- If it still looks wrong, tell [the support chat](/troubleshooting/contact-support) your tracker, the date, the metric, and both numbers.
+- If it still looks wrong, tell the [support chat](/troubleshooting/contact-support) your tracker, the date, the metric, and both numbers.

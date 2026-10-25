@@ -1,55 +1,80 @@
 ---
-title: "Competition issues"
-description: "Troubleshoot competition joins, hosting limits and plan messages, retired WHOOP Strain, delayed scores, unexpected standings, and scoring-change proposals."
+title: "I can't join a competition, or my score looks wrong"
+description: "Fix competition problems: join and hosting messages, plan limits, scores that won't update, ties and co-winners, results that changed, and retired WHOOP Strain competitions."
 ---
 
-## My score is not updating
+Find the problem you have below. Scores come from activity that has synced to MoveTogether, so many score problems are really sync problems. See [my activity isn't syncing](/troubleshooting/sync-issues) if your rings are wrong too.
 
-1. In **Settings → Data Sources**, check that your tracker is counting and has synced recently.
+## My score isn't updating
+
+1. Open **Settings** > **Data Sources** and check that your tracker is counting and has synced recently.
 2. Let your tracker's own app finish syncing to Apple Health or Health Connect.
-3. Open the competition leaderboard and pull down to refresh.
-4. Confirm that the competition is active and that the metric is eligible for its scoring method.
+3. Open the competition and pull down to refresh.
+4. Check that the competition is active and that your activity fits its scoring method.
 
-Scores are calculated on the server from synced activity. A refresh can't add data that hasn't reached Apple Health or Health Connect yet. Steps and workouts typed in by hand never count. See [the scoring reference](/competitions/scoring-reference) for method-specific caps and qualification rules.
+MoveTogether calculates scores on its servers from synced activity. A refresh can't add data that hasn't reached Apple Health or Health Connect yet. Steps and workouts typed in by hand never count. See [the scoring reference](/competitions/scoring-reference) for each method's caps and rules.
 
-In a [Distance competition](/competitions/distance), only the distance in recorded runs (or runs and walks) counts. Everyday steps don't add distance. Distance competitions are iPhone only.
+In a [Distance competition](/competitions/distance), only the distance in recorded runs (or runs and walks, if the host chose that) counts. Everyday steps don't add distance.
 
-## I cannot join
+## I can't join
 
-Check that the competition has not ended, the invite or code is current, and any invitation restriction includes you. Joining is unlimited on every plan, including Personal Goal, Stick To It, Collective, and Group Challenge competitions. If you see "This competition is full", the host's participant limit has been reached. If it is an active competition, its displayed dates and rules determine whether activity can be counted.
-
-## I cannot host
-
-Membership and Pro can host unlimited competitions. On the older Free plan you can host up to two active, upcoming, or draft competitions; complete or delete one to free a slot, or use a bonus slot if you have one. Seasonal and evergreen competitions don't count.
-
-Some formats need a plan to host. On iPhone, their cards show a **MEMBER** or **PRO** badge. On Android, a locked card's name ends in **(Member)**. If you try to create one without the plan, you'll see one of these messages:
-
-| Message | What it means |
+| What you see | What it means and what to do |
 | --- | --- |
-| "Hosting a Personal Goal competition takes a Membership or Pro. Joining one is always free." | Personal Goal needs Membership or Pro to host. |
-| "Hosting a Stick To It competition takes a Membership or Pro. Joining one is always free." | Stick To It needs Membership or Pro to host. |
-| "Hosting a Shared Goal competition takes a Membership or Pro. Joining one is always free." | A Collective competition (a shared group goal) needs Membership or Pro to host. |
-| "Hosting a Sleep competition takes a Membership or Pro. Joining one is always free." | Head to Head on [Sleep](/competitions/sleep) needs Membership or Pro to host. |
-| "Sleep competitions are for friends only. Make it private to use Sleep." | Sleep competitions must be private. |
-| "Hosting a Group Challenge is a Pro feature. Joining one is always free." | A [Group Challenge](/competitions/group-challenges) needs Pro. Membership isn't enough. |
+| **This competition is full** | The host's participant limit is reached. Ask the host to raise it, or join another. |
+| **Joining this competition needs a Membership. Private competitions hosted by a Member or Pro user are free to join while the host has room.** | Your account needs a Member plan to join this one. A private competition hosted by a Member or Pro is free to join while the host has free spots. |
+| **This host's free guest spots are all taken, so joining needs a Membership.** | A host on the Member plan can bring 3 friends for free across all their private competitions, and those spots are taken. Ask the host, or get a Member plan. |
 
-Ring Close Count, Head to Head (except Sleep), Workout Count, Percentage of Goals, Total Activity, and Distance are free to host.
+On Android, the two Membership messages show as a **Become a Member** screen instead of text.
 
-The first time you create a competition, you also agree to the one-time **Fair play** rules. Tick the box and tap **Accept and continue**. If you tapped **Cancel**, nothing was created; try again and accept to continue. See [your first competition](/getting-started/first-competition#fair-play-agreement).
+How free joining works:
+
+- **Pro host:** any number of friends join their private competitions free.
+- **Member host:** up to 3 friends join their private competitions free. Friends already playing keep their spot.
+- **Public competitions and Free-plan hosts:** no free guest spots.
+- **Seasonal events:** free for everyone to join.
+
+Some older accounts and members under 18 can join without a Member plan. If you see none of these messages, check that the competition hasn't ended and that your invite or code is current.
+
+## I can't host
+
+On the Free plan you can host up to 2 competitions that are active, upcoming, or still drafts. Joined competitions, seasonal events, and evergreen competitions don't count. To free a spot, finish or delete one, or use a bonus slot if you have one. Member and Pro can host as many as they like. If you hit the limit, you see **You've reached your hosting limit. Get a Membership or Pro to host as many as you like.**
+
+Some formats need a plan to host. On iPhone their cards show a plan label. On Android a locked format's name ends in **(Member)**. Without the plan, you see an upgrade screen or one of these messages:
+
+| Message | What it needs |
+| --- | --- |
+| **Hosting a Personal Goal competition takes a Membership or Pro.** | Member or Pro |
+| **Hosting a Stick To It competition takes a Membership or Pro.** | Member or Pro |
+| **Hosting a Shared Goal competition takes a Membership or Pro.** | Member or Pro (a Collective competition, where the group shares one goal) |
+| **Hosting a Sleep competition takes a Membership or Pro.** | Member or Pro. See [Sleep](/competitions/sleep). |
+| **Sleep competitions are for friends only. Make it private to use Sleep.** | Sleep competitions must be private. |
+| **Hosting a Best Days competition takes a Membership or Pro.** | Member or Pro |
+| **Hosting a Group Challenge is a Pro feature. Anyone you invite to a private one joins free.** | Pro. Member isn't enough. See [Group Challenges](/competitions/group-challenges). |
+
+The first time you create a competition, you also agree to the one-time **Fair play** rules. Tick the box and tap **Accept and continue**. If you tapped **Cancel**, nothing was created. Try again and accept to continue. See [your first competition](/getting-started/first-competition#fair-play-agreement).
+
+## We tied
+
+If two or more people tie for first when a round ends, they all win it. Each co-winner gets the win and the "you won" notification. Teams work the same way: every member of every team tied at the top wins. If nobody scored at all, the round has no winner.
+
+On iPhone the leaderboard still lists tied people one above the other, with whoever joined first on top. On Android tied people share the same rank number.
+
+## The results changed, or someone moved unexpectedly
+
+- **Late syncs.** Everyone's activity keeps arriving after the fact, and recent days update for about two days. Wait for trackers to sync, then refresh.
+- **After the results.** Once the results notification goes out, the round is final. A late sync still saves that person's day, but it no longer changes the order or the winner.
+- **Scoring changes.** If the host proposes a scoring change, every participant must accept before it applies. Then earlier days are rescored and positions can move. One decline keeps the current scoring. See [changing competition scoring](/competitions/changing-scoring).
+
+## Someone's score stopped moving
+
+If a member's account is suspended, their competition scores stop updating for as long as the suspension lasts. They also can't comment, react, or nudge in competitions. If it's your account, see the message in the app, or ask the [support chat](/troubleshooting/contact-support).
 
 ## WHOOP Strain competitions
 
-WHOOP Strain is retired as a scoring method. You can't create a new Strain competition or switch a competition to it. If you try, you'll see "WHOOP Strain competitions are no longer available. Pick a different scoring method and your whole group can compete."
+WHOOP Strain is retired as a scoring method. You can't create a new Strain competition or switch a competition to it. If you try, you see **WHOOP Strain competitions are no longer available. Pick a different scoring method and your whole group can compete.**
 
-A Strain competition that already exists keeps scoring until it ends. If it was set to repeat, the current round is its last.
+A Strain competition that already existed keeps scoring until it ends. If it was set to repeat, the current round is its last.
 
-## A score or position changed unexpectedly
+## Still looks wrong?
 
-First, wait for everyone's trackers to sync, then refresh. If the host proposed a scoring change, every participant must accept before it applies; then prior days are rescored and positions can move. One decline leaves the existing scoring in place. Read [changing competition scoring](/competitions/changing-scoring) for the full process.
-
-If the result still appears incorrect after the source has synced, message us in the in-app support chat and include the competition name, date, scoring method, and the activity value you expected:
-
-- **iPhone:** tap the red **\+** button, then **Help**, or go to **Settings → Resources → Contact Support**.
-- **Android:** go to **Settings → Contact Support**.
-
-See [contact support](/troubleshooting/contact-support).
+Message the [support chat](/troubleshooting/contact-support) and tap **Competition scoring**. Include the competition name, the date, and the activity value you expected. A screenshot of the leaderboard helps. See [send support a screenshot](/troubleshooting/screenshots).

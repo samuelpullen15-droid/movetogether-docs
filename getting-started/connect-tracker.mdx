@@ -3,9 +3,9 @@ title: "Connect your tracker"
 description: "MoveTogether reads Apple Health on iPhone and Health Connect on Android. Share your wearable into one of them, then choose the tracker that counts."
 ---
 
-If your watch, ring, or app syncs to Apple Health or Health Connect, it works with MoveTogether. You don't need a wearable at all: your phone's own step count works too.
+MoveTogether reads your activity from one place: **Apple Health** on iPhone, or **Health Connect** on Android. Any watch, ring, or app that shares into those works. You don't need a wearable at all, because your phone's own step count works too.
 
-MoveTogether doesn't connect to wearables directly, so there is no wearable account to sign in to here.
+MoveTogether doesn't connect to wearables directly, so there's no wearable account to sign in to here.
 
 | Phone | MoveTogether reads | Your wearable's job |
 | --- | --- | --- |
@@ -15,10 +15,10 @@ MoveTogether doesn't connect to wearables directly, so there is no wearable acco
 ## Set it up
 
 1. In your wearable's own app, turn on sharing to Apple Health (iPhone) or Health Connect (Android).
-2. In MoveTogether, allow access to Apple Health or Health Connect when asked.
-3. Check which tracker counts in **Settings → Data Sources**, under **Your tracker**.
+2. In MoveTogether, allow access to Apple Health or Health Connect when it asks.
+3. Choose your tracker in **Settings** > **Data Sources**, under **Your tracker**. On Android, the app also asks you once after onboarding.
 
-Step-by-step guides for each device:
+Step-by-step guides:
 
 - [Connect your tracker to Apple Health](/apple-health/connect-your-tracker) (iPhone)
 - [Connect your tracker to Health Connect](/health-connect/connect-your-tracker) (Android)
@@ -27,39 +27,39 @@ Step-by-step guides for each device:
 
 | Device | iPhone | Android |
 | --- | --- | --- |
-| Apple Watch | Writes to Apple Health on its own | Not available |
 | Your phone alone | iPhone steps and activity | Phone steps and activity |
+| Apple Watch | Writes to Apple Health on its own | Not available |
 | Garmin, WHOOP, Oura, Polar, Ultrahuman | From its app to Apple Health | From its app to Health Connect |
-| Google Health / Fitbit / Pixel Watch | From its app to Apple Health | From its app to Health Connect |
-| Samsung Galaxy Watch | Not available | Samsung Health to Health Connect |
+| Google Health / Fitbit / Pixel Watch | From the Google Health app to Apple Health | From the Google Health app to Health Connect |
+| Samsung Galaxy Watch | Not available | From Samsung Health to Health Connect |
 | Strava | Workouts only, through Apple Health | Workouts only, through Health Connect |
 
-Strava brings workouts, not all-day steps. Not every device shares every metric, so a tracker can supply workouts but no sleep, for example.
+Not every device shares every metric. Strava brings workouts but not all-day steps, and some trackers share workouts but not sleep.
 
 MoveTogether also has an [Apple Watch app](/account/apple-watch-app). Installing it is separate from giving MoveTogether Apple Health access.
 
 ## Which data counts
 
-<Tabs>
-  <Tab title="iPhone">
-    The tracker you choose counts toward your Steps and Exercise rings, competitions, and leagues, so the same walk never counts twice. Move can follow your Apple Watch or Apple Health's Move total instead. See [choose which tracker counts](/getting-started/primary-activity-source).
+You choose one **tracker**: the device whose numbers count toward your rings, competitions, and leagues. Two devices are never added together, so the same walk never counts twice. See [choose which tracker counts](/getting-started/primary-activity-source) for the full rules on each phone.
 
-    Workouts are different: workouts from any device still count toward a **Workout Count** competition.
-  </Tab>
-  <Tab title="Android">
-    The app you pick as your tracker counts toward your rings, competitions, and leagues. On a day it didn't record steps or calories, MoveTogether uses Health Connect's combined total for that metric. If you haven't picked one, it uses the combined total every day. Health Connect's app priority keeps the same walk from counting twice in that total. See [choose which tracker counts](/getting-started/primary-activity-source#on-android).
+Also on both phones:
 
-    Workouts from any app still count toward a **Workout Count** competition.
-  </Tab>
-</Tabs>
-
-On both apps, steps and workouts you type in by hand don't count.
+- Steps and workouts you type in by hand don't count.
+- Workouts from any device still show up, and still count toward a **Workout Count** competition.
+- **Sleep** counts only when a wearable recorded it: Apple Watch (iPhone), Oura, WHOOP, Garmin, Polar, Fitbit, or Ultrahuman. On Android, any watch or ring that Health Connect marks as a wearable also counts, such as a Galaxy Watch. Sleep from your phone alone, or typed in by hand, never counts. See [sleep competitions](/competitions/sleep).
 
 ## Had an older direct connection?
 
-If you connected a wearable to MoveTogether directly before version 2.1.1, it may still be listed.
+Before October 9, 2026, some wearables connected to MoveTogether directly. Those connections stopped syncing on that date and may still be listed.
 
-- **iPhone:** it appears under **Connected services** in **Settings → Data Sources**. These older connections can only be removed. Turn on Apple Health sharing in the wearable's app ([guide](/apple-health/connect-your-tracker)) so its activity keeps counting.
-- **Android:** it appears under **Moving to Health Connect** in **Settings → Data Sources**. These connections are being retired. Turn on Health Connect sharing in the wearable's app ([guide](/health-connect/connect-your-tracker)) so your activity keeps counting.
+- **iPhone:** under **Connected services** in **Settings** > **Data Sources**. They can only be removed.
+- **Android:** under **Moving to Health Connect** in **Settings** > **Data Sources**, marked **Stopped**.
 
-For missing readings, see [manage and troubleshoot data sources](/troubleshooting/data-sources).
+To keep that device counting, turn on Apple Health or Health Connect sharing in its own app. Use the [Apple Health guide](/apple-health/connect-your-tracker) or the [Health Connect guide](/health-connect/connect-your-tracker).
+
+## Something not right?
+
+- Readings missing: see [manage and troubleshoot data sources](/troubleshooting/data-sources).
+- Numbers don't match your tracker's app: see [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker).
+
+**Next:** [choose which tracker counts](/getting-started/primary-activity-source), then [set your daily goals](/getting-started/setting-goals).

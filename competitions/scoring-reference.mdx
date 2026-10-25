@@ -1,75 +1,137 @@
 ---
 title: "Competition scoring reference"
-description: "Current MoveTogether competition scoring methods, exact daily formulas, caps, qualification rules, and worked examples."
+description: "How every MoveTogether scoring method turns a day of activity into points, with the exact formula, limits, and a worked example for each."
 ---
 
-The host picks a scoring mode when creating a **Compete** competition. A **Collective** competition doesn't use one: see [Collective competitions](#collective-competitions) below. iPhone has eight: Ring Close Count, Head to Head, Workout Count, Percentage of Goals, Total Activity, Personal Goal, Stick To It, and Distance. Android has the same list without Distance. Head to Head scores one metric (Step Count, Calorie Burn, Exercise Minutes, or Sleep), so those four formulas appear in the table below. Scores are calculated on the server from synced activity, and each day's score is added across the competition window.
+This page explains how each scoring method works, for hosts choosing one and for players checking their points. Every method is available on iPhone and Android. A few need a Membership or Pro to host, and joining is free. For help choosing, see [pick the right kind](/competitions/how-it-works#pick-the-right-kind-in-a-minute).
 
-## Activity-based methods
+## How points add up
 
-| Method | Daily score | Limit or qualification |
-| --- | --- | --- |
-| Ring Close Count | One point for each Move, Exercise, and Steps goal reached | Maximum 3 points per day |
-| Percentage of Goals | Move-goal percentage + Exercise-goal percentage + Steps-goal percentage | Each ring is capped at 100%, for a maximum of 300 points per day |
-| Total Activity | active calories + exercise minutes + rounded(steps ÷ 100) | No method cap |
-| Step Count | steps | No method cap |
-| Calorie Burn | active calories | No method cap |
-| Exercise Minutes | exercise minutes | No method cap |
-| Sleep (iPhone) | minutes asleep, including naps | Maximum 540 points (9 hours) per day; see [Sleep competitions](/competitions/sleep) |
-| Workout Count | 1 for a workout day; otherwise 0 | Maximum 1 point per day. A day counts with one workout longer than 15 minutes, or with more than 15 Exercise minutes |
-| Distance (iPhone) | meters covered in recorded runs (or runs and walks) | No method cap; see [Distance competitions](/competitions/distance) |
+- Each day gets its own score. Your total is the sum of your daily scores across the competition dates.
+- A day runs midnight to midnight in your own time zone.
+- Scores are calculated on MoveTogether's servers from what your phone syncs from Apple Health (iPhone) or Health Connect (Android).
+- Steps, workouts, and sleep typed in by hand never count.
+- With [Best days](/competitions/best-days) on, only each person's best days count toward their total.
 
-**Example: Percentage of Goals.** With 50% Move, 100% Exercise, and 75% Steps progress, the day scores `50 + 100 + 75 = 225` points. Going to 150% of a ring goal still contributes 100, not 150.
+## The methods at a glance
 
-**Example: Workout Count.** A day with a 12-minute workout and 20 Exercise minutes scores 1 point, because Exercise passed 15 minutes. A day with a 12-minute workout and 10 Exercise minutes scores 0. Two long workouts on one day still score 1.
+The host picks one on **How are points scored?** when creating a **Compete** competition. A [Collective](/competitions/personal-and-shared-goals#collective-competitions) competition has no scoring method.
 
-**Example: Total Activity.** A day with 420 active calories, 35 exercise minutes, and 8,250 steps scores `420 + 35 + round(8,250 ÷ 100) = 538` points.
+| Method | One day scores | Daily limit | Plan to host |
+| --- | --- | --- | --- |
+| Ring Close Count | 1 point per goal reached: Move, Exercise, Steps | 3 | Free |
+| Head to Head: Steps | 1 point per step | None | Free |
+| Head to Head: Calories | 1 point per active calorie | None | Free |
+| Head to Head: Exercise | 1 point per exercise minute | None | Free |
+| Head to Head: Sleep | 1 point per minute asleep, naps included | 540 (9 hours) | Member or Pro |
+| Workout Count | 1 point on a day with a workout | 1 | Free |
+| Percentage of Goals | Move % + Exercise % + Steps %, each capped at 100 | 300 | Free |
+| Total Activity | Active calories + exercise minutes + steps ÷ 100 | None | Free |
+| Personal Goal | % of the goal you picked, capped at 100 | 100 | Member or Pro |
+| Stick To It | 1 point on a day you hit the shared daily goal | 1 | Member or Pro |
+| Distance | 1 point per meter in recorded runs (or runs and walks) | None | Free |
 
-## Goal-based methods
+After a competition is created, a Head to Head competition is named by its metric: **Step Count**, **Calorie Burn**, **Exercise Minutes**, or **Sleep**. A Workout Count competition with a workout goal is called **Workout Goal**. On iPhone, the competition info screen calls Total Activity **Raw Numbers**. It's the same method.
 
-### Personal Goal
+## Ring Close Count
 
-The host selects Steps, Calories, or Exercise Minutes and sets an allowed range. Each participant must choose a personal goal in that range. The daily score is that participant’s progress toward the goal as a percentage, capped at 100 and rounded to two decimal places. A participant who has not selected a goal scores zero until they do, and the personal goal is locked once set.
+Each day, you score 1 point for each of your own daily goals you reach: Move (active calories), Exercise (minutes), and Steps. The most is 3 points a day. Reaching a goal exactly counts. Going far past it doesn't add more.
 
-**Example:** With a 10,000-step Personal Goal, 7,500 steps scores 75 points; 10,000 or 12,000 steps scores 100 points.
+Each person is scored against their own goals. If someone has no goal set, MoveTogether uses 500 Move calories, 30 Exercise minutes, and 8,000 steps. To change yours, see [setting goals](/getting-started/setting-goals).
 
-Hosting Personal Goal and Stick To It needs Membership or Pro. Anyone can join them.
-
-### Stick To It
-
-The host sets one daily Steps, Calories, or Exercise Minutes target for everyone. Reaching the target scores 1 point for that day; missing it scores 0. Meeting the number exactly counts.
-
-**Example:** In a 7-day Stick To It competition with an 8,000-step daily target, reaching at least 8,000 steps on five days produces 5 points.
-
-The host also answers **On how many days?** That number is the group's headline target. It doesn't change points: every day you hit the goal still scores 1.
+**Example:** your goals are 500 calories, 30 minutes, and 8,000 steps. You burn 520 calories, exercise for 25 minutes, and walk 9,000 steps. Move and Steps are reached, Exercise isn't, so the day scores **2 points**.
 
 ## Head to Head
 
-In the create flow, **Head to Head** is the shortcut for choosing one metric: steps, active calories, exercise minutes, or sleep. It uses the corresponding Step Count, Calorie Burn, Exercise Minutes, or Sleep formula above. Sleep needs Membership or Pro to host and is for friends only; see [Sleep competitions](/competitions/sleep). Highest total wins.
+Head to Head races on one number. The host picks it on **Pick the metric**: Steps, Calories, Exercise, or Sleep. Highest total wins.
 
-## Workout goal
+| Metric | One day scores | Example day | Points |
+| --- | --- | --- | --- |
+| Steps | Your steps | 8,250 steps | 8,250 |
+| Calories | Your active calories | 430 active calories | 430 |
+| Exercise | Your exercise minutes | 42 exercise minutes | 42 |
+| Sleep | Minutes asleep, up to 540 | 7h 32m night plus a 45-minute nap | 497 |
 
-A Workout Count host can turn on **Set a workout goal** and choose **How many workouts?** Everyone who reaches it finishes, and the leaderboard keeps running underneath. Points don't change. This option is free to host.
+Sleep has its own rules about which night counts, naps, and which devices count. See [Sleep competitions](/competitions/sleep).
 
-## Distance (iPhone)
+**Example over a week:** in a Steps race, you walk 9,000, 6,500, 11,200, 8,000, 7,300, 12,000, and 10,000 steps. Your total is **64,000 points**.
 
-Distance scores 1 point per meter covered in recorded runs, or runs and walks, with an optional target to qualify. It's free to host and can't be picked as a scoring change later. See [Distance competitions](/competitions/distance).
+## Workout Count
 
-## Collective competitions
+You score 1 point on any day with either:
 
-A Collective competition has no scoring method and no ranking. Your steps, calories, or exercise minutes (whichever the host chose) during the competition dates add to one group total, which counts toward the host's **Together, reach** number. See [Collective competitions](/competitions/personal-and-shared-goals#collective-competitions).
+- one recorded workout longer than 15 minutes, or
+- more than 15 exercise minutes in total.
 
-## Goals, caps, and fairness
+The most is 1 point a day, so two long workouts on one day still score 1. Workouts from any device count once they reach Apple Health or Health Connect.
 
-Every device's data reaches MoveTogether the same way, through Apple Health or Health Connect. Most methods score the same Move, Exercise, and Steps numbers. Two read more than that:
+**Example:** a day with a 12-minute workout and 20 exercise minutes scores **1 point**, because exercise passed 15 minutes. A day with a 12-minute workout and 10 exercise minutes scores **0**. In a 14-day competition, working out on 9 days scores **9 points**.
 
-- **Workout Count** also checks recorded workouts, from any device.
-- **Distance** (iPhone) counts only the distance in recorded runs, or runs and walks. Everyday steps don't add distance. A workout saved by two apps counts once.
+### Add a workout goal
 
-On iPhone, each person's chosen tracker supplies Steps and Exercise, so wearing more devices never adds to them. Move follows the Apple Watch on days it's worn, and otherwise uses the higher of the tracker's active calories and Apple Health's Move total. See [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker). Steps and workouts typed in by hand never count.
+The host can turn on **Set a workout goal** and answer **How many workouts?** Everyone who reaches that number finishes, and the leaderboard keeps running underneath. Points don't change. It's free to host. The number can't be more than the number of days in the competition.
 
-Your everyday Move, Exercise, and Steps goals affect Ring Close Count and Percentage of Goals. They don't change raw-metric methods. Personal Goal uses the goal you lock for that competition, and Stick To It uses the host's shared daily target.
+## Percentage of Goals
 
-WHOOP Strain competitions are retired. You can't create a new one, but one that already exists keeps scoring until it ends. If it was set to repeat, the current round is its last.
+Each ring scores the percentage of your own goal you reached, up to 100. The three are added, so a perfect day is 300 points. Scores keep two decimal places.
 
-For a goal-based setup walkthrough, read [personal and shared goals](/competitions/personal-and-shared-goals). For a score that changes after a group vote, read [changing competition scoring](/competitions/changing-scoring).
+**Example:** you reach 50% of your Move goal, 100% of Exercise, and 75% of Steps. The day scores `50 + 100 + 75 = 225` points. Reaching 150% of a goal still adds 100, not 150, so nobody runs away with the board on one ring.
+
+## Total Activity
+
+Every active calorie, every exercise minute, and every 100 steps is worth 1 point. Steps are divided by 100 and rounded to the nearest whole number (a half rounds up).
+
+**Example:** 420 active calories, 35 exercise minutes, and 8,250 steps scores `420 + 35 + round(82.5) = 420 + 35 + 83 = 538` points.
+
+## Personal Goal
+
+The host picks Steps, Calories, or Exercise Minutes and sets a range. Each player then picks their own goal inside that range and taps **Set my goal**. Your daily score is the percentage of your goal you reached, up to 100, with two decimal places.
+
+- Your goal locks once you set it.
+- Until you set a goal, you score 0.
+- The top of the range can be at most 3 times the bottom. For example, 5,000 to 15,000 steps is allowed, and 5,000 to 20,000 isn't.
+
+**Example:** with a 10,000-step goal, 7,500 steps scores **75 points**. 10,000 or 12,000 steps scores **100 points**. A friend who picked 6,000 steps and walked 6,000 also scores 100. That's the point: people of different fitness levels can win.
+
+## Stick To It
+
+The host sets one daily goal for everyone (**Hit this every day**) on Steps, Calories, or Exercise Minutes. Reaching it scores 1 point for the day. Missing it scores 0. Reaching it exactly counts. Going over doesn't earn extra.
+
+The host also answers **On how many days?** That's the group's headline target, such as 20 of 30 days. It doesn't change points.
+
+**Example:** in a 7-day competition with an 8,000-step daily goal, you hit at least 8,000 steps on 5 days. You score **5 points**.
+
+## Distance
+
+Distance scores 1 point per meter in recorded workouts. The host picks **Runs** or **Runs and walks**. Everyday steps don't add distance, and a workout saved by two apps counts once. Results show in miles or kilometers if the host chose that.
+
+**Example:** in a **Runs and walks** competition, a 5 km run and a 2 km walk on the same day score **7,000 points**. In a **Runs** competition, the same day scores **5,000**.
+
+Distance also has an optional target to qualify. See [Distance competitions](/competitions/distance).
+
+## Best days
+
+Best days isn't a scoring method. It's an option on Total Activity and on Head to Head with Steps, Calories, or Exercise. It drops each person's worst days from their total. See [Best days competitions](/competitions/best-days) for the rules and an example.
+
+## Older and retired methods
+
+- **Move Ring Close** scores 1 point on a day you reach your Move goal. You may still see it on older competitions.
+- **WHOOP Strain** is retired. You can't create one. One that already exists keeps scoring until it ends, and if it was set to repeat, it doesn't start another round.
+- Competitions made before the **Compete** and **Collective** choice existed may have a race and a shared goal at once. They keep working that way.
+
+## Fairness across devices
+
+Every device's data reaches MoveTogether the same way, through Apple Health or Health Connect. Most methods score the same Move, Exercise, and Steps numbers you see in the app. Two read more:
+
+- **Workout Count** also checks recorded workouts.
+- **Distance** reads only the distance in recorded workouts.
+
+You choose which device counts toward your rings, so wearing two devices never doubles your steps or exercise. See [your primary activity source](/getting-started/primary-activity-source).
+
+Your daily goals matter only for Ring Close Count and Percentage of Goals. Personal Goal uses the goal you picked for that competition, and Stick To It uses the host's goal.
+
+## Something not right?
+
+- Points seem low: open the app so it syncs, then compare your day with the method above. See [competition issues](/troubleshooting/competition-issues).
+- Your numbers don't match your tracker's app: see [why numbers differ from your tracker](/troubleshooting/why-numbers-differ-from-your-tracker).
+- Scoring changed mid-competition: see [changing competition scoring](/competitions/changing-scoring).

@@ -1,15 +1,21 @@
 ---
-title: "Move Leagues"
-description: "How MoveTogether's free weekly leagues work: tiers, scoring, local Monday resets, results timing, promotion and demotion zones, ties, and the demotion shield."
+title: "Move Leagues: tiers, zones, and weekly results"
+description: "How MoveTogether's free weekly leagues work: the 10 tiers, how points are counted, promotion, safe, and demotion zones, results timing, the demotion shield, and league chat."
 ---
 
-Move Leagues are free weekly cohorts. Open **Compete**, then the leaderboard launcher and **League**, to see your tier, cohort, current zone, and countdown.
+Move Leagues put you in a weekly group (a cohort) of up to 30 people at the same tier. Finish near the top to move up a tier, near the bottom to move down. Leagues are free on every plan, on iPhone and Android, and you're placed automatically once you start moving.
 
-## The ladder
+## Open your league
 
-You begin at Walker. A full cohort contains up to 30 people at the same tier. Top finishers promote, people in the middle hold their tier, and the demotion zone moves down one tier. The displayed zones are live estimates; actual thresholds scale for a smaller cohort.
+Open **Compete** and tap the league card at the top, or tap **Leaderboard**. The leaderboard opens on **League**, titled with your tier, such as **Runner League**. The other views are **Friends** and **Global**.
 
-| # | Tier | Promotion at a full cohort | Demotion at a full cohort |
+Your league shows your rank, the time left in the week, and which zone you're in.
+
+## The tiers
+
+You start at Walker. Each week, the top of the cohort moves up a tier and the bottom moves down one.
+
+| # | Tier | Promote at a full cohort | Demote at a full cohort |
 | --- | --- | --- | --- |
 | 1 | Walker | Top 15 | None |
 | 2 | Jogger | Top 12 | Bottom 5 |
@@ -22,42 +28,58 @@ You begin at Walker. A full cohort contains up to 30 people at the same tier. To
 | 9 | Master | Top 3 | Bottom 5 |
 | 10 | Legend | None | Bottom 5 |
 
-Promotion is capped at half the cohort. For example, a 10-person Jogger cohort promotes its top five rather than twelve. Demotion also scales down in smaller cohorts, leaving at least one safe middle position. Walker is the floor; Legend is the top tier.
+### Smaller cohorts
 
-## Weekly timing
+- No more than half the cohort can move up. A 10-person Jogger cohort promotes its top 5, not 12.
+- At least one person always stays in the middle. For example, an 8-person Jogger cohort promotes 4 and demotes 3.
+- With fewer than 8 people, it's a quiet week: nobody moves up or down. The league shows **No promotions or demotions this week**.
 
-Your league week runs from Monday at midnight through Sunday in your own time zone. People in one cohort can live in different time zones, so each person's week closes at their own local Monday.
+## The zones
 
-After the week ends, the League card shows **Results pending** while everyone in the cohort finishes and their trackers sync. Results land by 6 a.m. Eastern Time every Monday, sooner when the whole cohort's week has already ended. Then MoveTogether records your result and assigns your next cohort at your new tier. Your new week's points count from Monday while your next group is being prepared.
+| Zone | What it means |
+| --- | --- |
+| **Promotion zone** | You'd move up a tier if the week ended now. |
+| **Safe zone** | You'd stay at your tier. |
+| **Demotion zone** | You'd move down a tier, unless your shield saves you. The league tells you how many spots you need to climb to be safe. |
 
-If a cohort has fewer than 8 people, it's a quiet week: nobody promotes or demotes. The League card shows **No promotions or demotions this week**.
+Zones are live. They move as everyone's activity syncs.
 
-## Scoring
-
-League points for the week are:
+## How points are counted
 
 ```text
-points = move calories + exercise minutes + round(week's steps ÷ 100)
+league points = active calories + exercise minutes + round(week's steps ÷ 100)
 ```
 
-Calories and minutes are added up across Monday to Sunday. Steps are added up for the whole week first, then divided by 100 and rounded once. Your daily ring goals don't change your league score, so someone with a low Move goal can't out-rank someone with a tougher goal for the same activity.
+Calories and minutes are added up from Monday to Sunday. Steps are added up for the whole week, then divided by 100 and rounded once. Your daily ring goals don't affect league points, so a low Move goal never helps or hurts you.
 
-**Example:** a week with 2,940 active calories, 245 exercise minutes, and 57,750 steps scores `2,940 + 245 + round(577.5) = 3,763` league points.
+**Example:** a week with 2,940 active calories, 245 exercise minutes, and 57,750 steps scores `2,940 + 245 + round(577.5) = 2,940 + 245 + 578 = 3,763` league points.
 
-The **Friends** leaderboard ranks today's activity and resets at your local midnight. The **Global** leaderboard ranks the current week with its own formula, so your Global score won't match your League points.
+When two people finish with the same points, the order between them is fixed by account, not by name, so changing your display name can't change your result.
 
-## Zones and ties
+## When the week ends
 
-The leaderboard marks a promotion zone, safety zone, and demotion zone. A league’s final order uses a stable system tie-break based on account identity, so changing a display name cannot affect promotion or demotion. Monthly challenge standings work differently; see [monthly challenges](/engagement/monthly-challenges).
+Your league week runs Monday at midnight through Sunday, in the time zone saved on your profile when you joined the cohort.
+
+After the week ends, the league shows **Results pending** while everyone in the cohort finishes their week and syncs. Results land by about 6 a.m. Eastern Time on Monday, and sooner when everyone's week has already ended. Then MoveTogether records your result and puts you in a new cohort at your new tier. Your new week's points count from Monday while that happens.
 
 ## Demotion shield
 
-You start with one demotion shield. If you finish in the demotion zone while holding it, it's used automatically and you stay at your current tier. Once it's used, it's gone. The League card shows whether you have one.
+Everyone starts with one demotion shield. If you finish in the demotion zone while you have it, it's used automatically and you stay at your tier. Once it's used, it's gone. The league shows **Protected** while you still have it.
 
-## Reading the other leaderboard tabs
+## League chat
 
-- **League:** your current weekly cohort and tier.
-- **Friends:** a daily ranking of people you have added; it resets at local midnight.
-- **Global:** the top 100 movers worldwide for the current week.
+Once your cohort has 8 or more people, a chat button appears on the League view. Everyone in your cohort is in the chat. You get a notification only when someone @mentions you.
 
-For a direct challenge with friends using a different scoring method, create or join a competition. For missing data or a delayed position change, see [competition troubleshooting](/troubleshooting/competition-issues).
+## Friends and Global
+
+- **Friends** ranks you and your friends on today's activity, using the same formula as league points. It resets at your local midnight.
+- **Global** shows the top 100 movers worldwide for this week, Monday through today in your time zone.
+
+## Something not right?
+
+- You're not in a league yet: move today and you'll be placed. The league card says **Not in a league yet** until then.
+- Your rank didn't change after a workout: wait for it to sync. See [sync issues](/troubleshooting/sync-issues).
+- Results are taking a while on Monday: they land by about 6 a.m. Eastern Time.
+- More help: [competition issues](/troubleshooting/competition-issues).
+
+For a race with friends using a different scoring method, [create a competition](/competitions/how-it-works).

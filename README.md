@@ -6,7 +6,9 @@ This repository contains the customer-facing Mintlify docs. `docs.json` controls
 
 Use the current app UI for labels and navigation, and backend rules for scoring, access limits, date boundaries, and data handling. Confirm the feature is released on the platform described; merged code alone does not establish availability in every installed mobile version. Keep configuration-dependent support routes and ad offers conditional.
 
-The September 2026 parity pass used MoveTogether main `55065e5cc209a293bc783a51e7efa6aa0fd47af4` and docs main `c862329cdbb39e2d0f5763428efa4be956a0c615`.
+The October 2026 audit checked every page against MoveTogether main `551a2183822004538f99255a61fbfecab546ef4d`, treating iOS `0ae669668` and Android `9b274ab6d` as the builds members run (2.1.3). Client changes merged after those are not documented until they ship.
+
+Navigation groups follow what members are trying to do, not the folder names. Folder paths stay fixed because the apps hard-code page URLs. Move a page between nav groups freely, but rename or delete a file only with a redirect in `docs.json`.
 
 | Topic | Sources in the MoveTogether app repository | Canonical help page |
 | --- | --- | --- |
@@ -16,7 +18,7 @@ The September 2026 parity pass used MoveTogether main `55065e5cc209a293bc783a51e
 | Challenges | Current daily calibration and monthly standings migrations, Challenges UI | `engagement/daily-challenges.mdx`, `engagement/monthly-challenges.mdx` |
 | Coaching | Coach settings/views, `ai-coach`, help lane, coach reward configuration | `social-coach/coach-mo.mdx` |
 | Social access | `stream-chat-token`, `stream-communities`, activity API, reaction models | `social-coach/direct-messaging.mdx`, `subscriptions/plans.mdx` |
-| Privacy and support | `SupportRouteStore.swift`, Intercom/voice integrations, attribution implementation, website legal content | `account/ai-and-your-data.mdx`, `account/ads-and-measurement.mdx` |
+| Privacy and support | `ios-native/MoveTogether/Support/`, the native support chat on Android and the website, ad consent code, website legal content | `account/ai-and-your-data.mdx`, `account/ads-and-measurement.mdx` |
 
 ## Editorial and verification checklist
 

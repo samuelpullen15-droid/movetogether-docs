@@ -1,28 +1,28 @@
 ---
-title: "Distance competitions"
-description: "How Distance scoring works on iPhone: which workouts count, how a day scores, the optional target to qualify, miles or kilometers, and sharing results with the organizer."
+title: "Race on distance with runs and walks"
+description: "How Distance competitions work on iPhone and Android: which workouts count, how a day scores, the optional target to qualify, miles or kilometers, and sharing results with the organizer."
 ---
 
-<Note>
-  Distance competitions are iPhone only. The Android app can't create one and doesn't show distance results or the sharing options on this page.
-</Note>
+Distance is a scoring method for runners and walkers. It counts the distance in workouts people record, not every step of the day. Distance is free to host on every plan, anyone can join, and it works on iPhone and Android.
 
-Distance is a scoring mode for runners and walkers. It counts the distance in workouts people record, not every step of the day. Distance is free to host on every plan, and anyone can join.
+<Note>
+  On Android, allow **Distance** for MoveTogether in Health Connect, or your workouts won't count. If it's off, the app shows "Allow distance so your workouts count in Distance competitions."
+</Note>
 
 ## How a day scores
 
 Each day scores **1 point per meter** covered in recorded workouts that day, rounded to whole meters. There's no daily cap. The leaderboard adds up every day in the competition.
 
-- **Only recorded workouts count.** Everyday walking around the house doesn't add distance. Start a workout on your watch, phone, or fitness app so the distance is saved as a workout.
+- **Recorded workouts only:** everyday walking around the house doesn't add distance. Start a workout on your watch, phone, or fitness app so the distance is saved as a workout. On iPhone it reaches MoveTogether through Apple Health, and on Android through Health Connect.
 - **The host picks which workouts count:** **Runs** (outdoor, trail, and treadmill runs) or **Runs and walks** (runs plus walks, hikes, and treadmill workouts). Cycling and swimming don't count.
-- **A workout saved by two apps counts once.** When workouts overlap in time, such as a watch run that also lands in Strava, only the longest one counts. Workouts that only touch end to start count separately.
-- Steps and workouts typed in by hand never count.
+- **Duplicates:** a workout saved by two apps counts once. When workouts overlap in time, such as a watch run that also lands in Strava, only the longest one counts. Workouts that only touch end to start count separately.
+- **Typed in by hand:** steps and workouts typed in by hand never count.
 
 **Example:** you record a 5 km run in the morning and a 2 km walk in the evening, in a **Runs and walks** competition. That day scores 7,000 points. In a **Runs** competition, it scores 5,000.
 
 ## Create a Distance competition
 
-1. Tap **+**, then **New competition**, and choose **Distance** on the scoring step.
+1. Open **Compete**, tap **+** (**Add competition**), then **Create competition**, pick **Compete**, and choose **Distance** on the scoring step.
 2. On **Set the distance rule**, answer **Which workouts count?** with **Runs** or **Runs and walks**.
 3. Choose an optional target (see below).
 4. Under **What does the leaderboard show?**, choose **Miles** or **Kilometers** (whichever matches your units setting) or **Points**. This only changes how the leaderboard looks. Points are meters either way, and each person sees distances in their own units.
@@ -54,10 +54,17 @@ The person who created a Distance competition can export a spreadsheet of result
 
 **As a participant:** on the Distance card, turn on **Share my results with the organizer**. It lets the organizer export your weekly distance and pass or fail for this competition only. It's off by default, and you can turn it off any time. The next export leaves you out.
 
-**As the organizer:** tap **Export results** on the Distance card. You get a CSV spreadsheet with one row per person per round: name, username, round dates, points, distance in miles and kilometers, longest single workout, and pass or fail when there's a target. People who didn't turn on sharing aren't in the file. Names follow the same privacy rules as the leaderboard, so a hidden name stays blank.
+**As the organizer:** tap **Export results** on the Distance card. You get a CSV spreadsheet with one row per person per round: name, username, round dates, points, distance in miles and kilometers, and longest single workout. When there's a target, it also shows how many days or weeks each person hit and pass or fail. People who didn't turn on sharing aren't in the file, and your own row is always included. Names follow the same privacy rules as the leaderboard, so a hidden name stays blank. You can export up to 3 times an hour.
+
+## Something not right?
+
+- A run didn't count: check it was saved as a workout, and that it's a run (or a walk or hike, if the host picked **Runs and walks**).
+- Nothing counts on Android: allow **Distance** for MoveTogether in Health Connect.
+- Your distance is lower than your running app shows: overlapping copies of one workout count once, at the longest one's distance.
+- More help: [competition issues](/troubleshooting/competition-issues) and [sync issues](/troubleshooting/sync-issues).
 
 ## Related
 
 - [Competition scoring reference](/competitions/scoring-reference)
 - [How competitions work](/competitions/how-it-works)
-- [Competition issues](/troubleshooting/competition-issues)
+- [Recaps and organizer reports](/competitions/recaps)

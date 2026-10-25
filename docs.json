@@ -40,6 +40,11 @@
       "source": "/getting-started/android-public-beta",
       "destination": "/getting-started/android",
       "permanent": true
+    },
+    {
+      "source": "/competitions/achievements",
+      "destination": "/engagement/badges",
+      "permanent": true
     }
   ],
   "navigation": {
@@ -48,23 +53,39 @@
         "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get started",
             "pages": [
               "index",
               "getting-started/welcome",
               "getting-started/create-account",
-              "getting-started/language-and-region",
-              "getting-started/android",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
+              "getting-started/setting-goals",
+              "getting-started/first-competition",
+              "getting-started/finding-friends",
+              "getting-started/android",
+              "getting-started/whats-new"
+            ]
+          },
+          {
+            "group": "Trackers, syncing, and stats",
+            "pages": [
               "apple-health/connect-your-tracker",
               "health-connect/connect-your-tracker",
               "getting-started/primary-activity-source",
               "getting-started/logging-workouts",
-              "getting-started/setting-goals",
-              "getting-started/finding-friends",
-              "getting-started/first-competition",
-              "getting-started/build-with-mo"
+              "account/apple-watch-app",
+              "engagement/activity-analytics",
+              "engagement/export-activity-report",
+              {
+                "group": "When your numbers look wrong",
+                "pages": [
+                  "troubleshooting/sync-issues",
+                  "troubleshooting/data-sources",
+                  "troubleshooting/why-numbers-differ-from-apple-health",
+                  "troubleshooting/why-numbers-differ-from-your-tracker"
+                ]
+              }
             ]
           },
           {
@@ -72,101 +93,130 @@
             "pages": [
               "competitions/how-it-works",
               "competitions/scoring-reference",
-              "competitions/personal-and-shared-goals",
-              "competitions/distance",
-              "competitions/sleep",
-              "competitions/group-challenges",
+              {
+                "group": "Competition types",
+                "pages": [
+                  "competitions/personal-and-shared-goals",
+                  "competitions/teams",
+                  "competitions/group-challenges",
+                  "competitions/distance",
+                  "competitions/sleep",
+                  "competitions/best-days"
+                ]
+              },
+              "getting-started/build-with-mo",
               "competitions/changing-scoring",
               "competitions/leaderboard",
+              "competitions/crew-check-ins",
+              "competitions/recaps",
+              "competitions/competition-history",
               "competitions/leagues",
-              "competitions/achievements",
-              "competitions/competition-history"
+              "troubleshooting/competition-issues"
             ]
           },
           {
-            "group": "Engagement",
+            "group": "Streaks, challenges, and badges",
             "pages": [
               "engagement/streaks-shields",
+              "engagement/badges",
               "engagement/daily-challenges",
               "engagement/weekly-challenges",
               "engagement/monthly-challenges",
-              "engagement/morning-brief",
-              "engagement/activity-analytics",
-              "engagement/export-activity-report",
-              "engagement/weekly-report",
-              "engagement/sharing-your-wins",
-              "engagement/seasonal-events"
+              "engagement/seasonal-events",
+              "engagement/event-paces",
+              "engagement/daily-reminders",
+              "engagement/sharing-your-wins"
             ]
           },
           {
-            "group": "Social & Coach",
+            "group": "Coach Mo (AI coach)",
             "pages": [
-              "social-coach/friends-feed",
               "social-coach/what-makes-mo-different",
               "social-coach/coach-mo",
-              "social-coach/voice",
               "social-coach/coach-mo-capabilities",
-              "social-coach/coach-mo-settings",
               "social-coach/coach-plans-rest-days",
-              "social-coach/managing-coach-mo-memory",
-              "social-coach/reading-activity-trace",
-              "social-coach/roast-mode",
-              "social-coach/managing-conversations",
-              "social-coach/direct-messaging",
-              "social-coach/chat-announcements-mentions",
-              "social-coach/communities"
+              "engagement/morning-brief",
+              "engagement/weekly-report",
+              "social-coach/voice",
+              {
+                "group": "Mo settings and memory",
+                "pages": [
+                  "social-coach/coach-mo-settings",
+                  "social-coach/managing-coach-mo-memory",
+                  "social-coach/managing-conversations",
+                  "social-coach/reading-activity-trace",
+                  "social-coach/roast-mode"
+                ]
+              }
             ]
           },
           {
-            "group": "Subscriptions",
+            "group": "Friends and chat",
+            "pages": [
+              "social-coach/friends-feed",
+              "social-coach/direct-messaging",
+              "social-coach/chat-announcements-mentions",
+              "social-coach/communities",
+              "account/referrals"
+            ]
+          },
+          {
+            "group": "Plans and billing",
             "pages": [
               "subscriptions/plans",
               "subscriptions/subscribe",
               "subscriptions/managing",
-              "subscriptions/billing"
+              "subscriptions/billing",
+              "troubleshooting/subscription-issues"
             ]
           },
           {
-            "group": "Movecoins",
+            "group": "Movecoins rewards",
             "pages": [
               "movecoins/overview",
               "movecoins/turn-on",
               "movecoins/earning",
-              "movecoins/cash-out"
+              "movecoins/cash-out",
+              "troubleshooting/movecoins"
             ]
           },
           {
-            "group": "Account & privacy",
+            "group": "Account, privacy, and safety",
             "pages": [
-              "account/profile",
-              "account/account-details",
-              "account/apple-watch-app",
-              "account/appearance-and-display",
-              "account/notifications",
-              "account/referrals",
-              "account/privacy-settings",
-              "account/ads-and-measurement",
-              "account/data-and-privacy",
-              "account/ai-and-your-data",
-              "account/guidelines-moderation",
-              "account/security",
-              "account/reporting-blocking"
+              {
+                "group": "Account and settings",
+                "pages": [
+                  "account/profile",
+                  "account/account-details",
+                  "account/appearance-and-display",
+                  "getting-started/language-and-region",
+                  "account/notifications",
+                  "troubleshooting/notification-problems",
+                  "account/security"
+                ]
+              },
+              {
+                "group": "Privacy and safety",
+                "pages": [
+                  "account/privacy-settings",
+                  "account/data-and-privacy",
+                  "account/ai-and-your-data",
+                  "account/ads-and-measurement",
+                  "account/guidelines-moderation",
+                  "account/reporting-blocking"
+                ]
+              }
             ]
           },
           {
-            "group": "Troubleshooting",
+            "group": "Get help",
             "pages": [
-              "troubleshooting/sync-issues",
-              "troubleshooting/data-sources",
-              "troubleshooting/why-numbers-differ-from-apple-health",
-              "troubleshooting/why-numbers-differ-from-your-tracker",
-              "troubleshooting/competition-issues",
-              "troubleshooting/notification-problems",
-              "troubleshooting/app-performance",
-              "troubleshooting/subscription-issues",
-              "troubleshooting/movecoins",
               "troubleshooting/contact-support",
-              "troubleshooting/screen-share"
+              "troubleshooting/support-tickets",
+              "troubleshooting/screenshots",
+              "troubleshooting/screen-share",
+              "troubleshooting/app-performance",
+              "troubleshooting/share-an-idea"
             ]
           }
         ]

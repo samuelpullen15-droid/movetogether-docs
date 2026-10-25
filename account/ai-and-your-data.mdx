@@ -1,78 +1,91 @@
 ---
-title: "AI and your data"
-description: "How Coach Mo text, Coach Mo on Apple Intelligence, Coach voice, the support chat and its AI agent, screen sharing, and Stream-powered social features handle identity and context."
+title: "How AI features use your data"
+description: "What Coach Mo, Coach Mo on Apple Intelligence, Coach voice, and the support chat's AI agent send to each provider, and the controls you have."
 ---
 
-MoveTogether uses different service providers for Coach Mo text, Coach voice, the support chat, chat, communities, feeds, and moderation. Each path sends the context needed to operate that feature.
+MoveTogether uses AI for Coach Mo and for the first replies in the support chat. Each feature sends a provider only what it needs. This page explains what goes where. It applies on every plan, on iPhone and Android, unless noted.
 
-Coach Mo uses relevant fitness context, goals, profile information, and chat messages to provide coaching and reports. Voice features process your spoken audio to transcribe what you say and generate a response.
+## At a glance
 
-## Providers and data
+| Feature | Provider | What it gets |
+| --- | --- | --- |
+| Coach Mo text replies, insights, and reports | Anthropic (Claude) | Your messages and coaching context, with names swapped for placeholders and no MoveTogether user ID |
+| Coach Mo on Apple Intelligence (Pro, iPhone, optional) | Apple Private Cloud Compute | Your message as typed, plus coaching context with names swapped for placeholders |
+| Coach Mo voice | ElevenLabs | Your spoken audio, messages, coaching context, your first name, and your MoveTogether user ID |
+| Support chat AI agent (Marco) | Skydive, with Anthropic's Claude writing replies | Your support messages and files, and the account details the support chat holds |
 
-- **Anthropic** processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders, and Coach text prompts do not include your MoveTogether user ID. Anthropic's Claude also writes the replies of our AI support agent.
-- **ElevenLabs** powers Coach Mo voice, where available. It receives spoken audio, messages, relevant fitness context, your first name, and your MoveTogether user ID for that feature.
-- **Chatwoot** runs the in-app support chat and support email. Our AI support agent, run by **Skydive** and powered by Anthropic's Claude, may answer first, and a member of our team can take over.
-- **Stream** powers chat, communities, feeds, and moderation. It receives the identity and content needed to provide those features. It also carries the live video when you share your screen with support.
-
-These providers process information on our behalf to provide these features. Anthropic and ElevenLabs do not use your coaching data to train their own models. See the [Privacy Policy](https://movetogetherfitness.com/privacy) for the published provider and retention disclosures.
-
-We do not use health and fitness data for advertising. Voice is not used to create a voiceprint or to identify or authenticate you.
-
-## Your controls
-
-- Delete Coach Mo conversations and Files from Coach Mo settings.
-- Turn off **Personalize Coach with my fitness data** in **Settings → Privacy Settings** if you want Coach Mo to reply without using your activity, competitions, or goals.
-- Manage activity and social sharing in **Settings → Privacy Settings**.
-- Delete your account from **Settings → Privacy Settings** to request removal of associated account data.
-
-For the complete provider list, retention details, and legal rights, read the [Privacy Policy](https://movetogetherfitness.com/privacy).
+Anthropic and ElevenLabs process this data on our behalf and don't use it to train their own models. They may keep conversation data for a limited time for safety and debugging, then delete it. Health and fitness data is never used for advertising.
 
 ## Coach Mo text
 
-Coach Mo text prompts replace direct names with placeholders before being sent to Anthropic. Your MoveTogether user ID is not included in the prompt.
+Coach Mo uses your goals, recent activity, workouts, streaks, competitions, and chat messages to coach you. When **Personalize Coach with my fitness data** is on and the data is available, it can also use sleep and recovery, badges, weekly history, and rivalries.
 
-| Type of info | What Anthropic actually sees |
-|---|---|
-| Direct names | Placeholders such as `[USER_NAME]` or `[COMPETITOR_1]` |
-| Your MoveTogether user ID | Not included in the prompt |
-| Your activity numbers (calories, steps, rings, minutes) | Real numbers |
-| Your competition stats and standings | Real numbers |
+Before anything goes to Anthropic:
 
-When personalization is enabled and the data is available, Coach Mo may also receive relevant context about workouts, sleep and recovery, goals, streaks, badges, competitions, weekly history, and rivalries.
+| Type of info | What Anthropic sees |
+| --- | --- |
+| Names, yours and other people's | Placeholders such as `[USER_NAME]` or `[COMPETITOR_1]` |
+| Your MoveTogether user ID | Not included |
+| Your activity numbers (calories, steps, rings, minutes) | The real numbers |
+| Your competition stats and standings | The real numbers |
 
-## Why your name still appears when Coach Mo replies
-
-The app can replace supported placeholders with familiar names when it displays the response. Anthropic produces the response from the placeholder-redacted prompt.
+The app swaps the placeholders back to names when it shows you Mo's reply. Mo uses the same names the leaderboard shows you. If a rival hides their real name, Mo uses their username, and someone you've blocked (or who blocked you) is just "another member."
 
 ## Coach Mo on Apple Intelligence (Pro, iPhone)
 
-With Pro on iOS 27, and an iPhone that supports Apple Intelligence, you can turn on **Use Apple Intelligence** in Coach Mo's settings. Coach Mo's normal replies then run privately on Apple Intelligence when your device supports it. Roast mode, game plans, and rich cards still use the standard engine described above.
+With Pro, on iOS 27 and an iPhone that supports Apple Intelligence, you can choose to have Coach Mo's normal replies written by Apple's model on Apple's Private Cloud Compute servers.
 
-The toggle only appears when your plan and iPhone can use it. It is off until you turn it on.
+1. Open **Settings**.
+2. Tap **Customization** > **Coach Mo**.
+3. Turn on **Use Apple Intelligence**.
+
+It's off until you turn it on. The switch only appears when your plan and iPhone can use it.
+
+When it's on:
+
+- Your message goes to Apple exactly as you typed it, so any names you type are sent as written. Coaching context goes with names swapped for placeholders, and without your MoveTogether user ID.
+- Apple says Private Cloud Compute uses the data only to answer and doesn't store it.
+- Our servers still receive every message. We check it for safety, count it toward your plan, and save it in your Coach Mo history.
+- Roast mode, rich cards, and questions about how to use MoveTogether still use Anthropic. So does any reply Apple can't give.
 
 ## Coach voice
 
-Coach voice uses ElevenLabs to process spoken audio, relevant fitness context, your first name, and your MoveTogether user ID. Audio is used only to generate a response. MoveTogether keeps transcripts of your voice conversations until you delete your Coach Mo history or your account.
+Coach voice sends your spoken audio, relevant coaching context, your first name, and your MoveTogether user ID to ElevenLabs. Audio is used only to make a reply, then discarded. Your voice isn't used to build a voice profile or to identify you.
 
-## Support chat and screen sharing
+MoveTogether keeps transcripts of your voice conversations until you delete your Coach Mo history or your account. ElevenLabs keeps transcripts for up to 30 days for troubleshooting.
 
-The in-app support chat runs on Chatwoot. When you chat while signed in, Chatwoot receives your MoveTogether user ID, email address, first name, an account verification code, your subscription tier, time zone, and account sign-up date, so support can recognize your account. Our AI support agent may reply first. Its replies are AI-generated and may be wrong, so ask for a person if something doesn't look right. Support conversations are also shared in our internal Slack workspace so our team can follow and reply.
+## Support chat
 
-If support asks to see your screen and you allow it, a live video of MoveTogether goes to that support team member through Stream. Your chats are hidden while you share, and nothing is recorded. See [Share your screen with support](/troubleshooting/screen-share).
+The in-app support chat runs on Chatwoot. Our AI support agent, Marco, may answer first. Marco runs on Skydive, and Anthropic's Claude writes its replies. A member of our team can step in at any time. Marco's replies are AI-generated and can be wrong, so ask for a person if something doesn't look right.
 
-Avoid sharing passwords, payment-card details, or other secrets in voice or support conversations, and only include health details in a support chat if they are needed to solve the problem.
+- When you chat while signed in, Chatwoot gets your user ID, email, first name, plan, time zone, sign-up date, and a code that proves the chat is yours.
+- Screenshots and files you send go to Chatwoot and are read by the AI agent.
+- Support conversations are shared in our team's Slack so we can follow up.
+- If your problem needs our engineers, Marco can file a ticket in Linear. The ticket has a summary of your request and technical details about your app, device, syncing, and plan. We remove email addresses and phone numbers we detect, and we don't add your name, email, or user ID.
 
-## Content moderation
+### Show Marco your screen (iPhone)
 
-Stream provides MoveTogether's chat, communities, feeds, and moderation infrastructure. It receives the identity and content needed to deliver those features, associate content with the right account, and enforce community standards.
+Marco may ask **Show Marco your screen?** in the support chat.
 
-## What this means for you
+1. Tap **Show me**, or **Not now** to decline.
+2. Go to the screen with the problem.
+3. Tap **Show Marco**.
 
-- Anthropic text prompts use placeholders for direct names and omit the MoveTogether user ID.
-- On iPhone with Pro, you can choose to run Coach Mo's normal replies on Apple Intelligence.
-- ElevenLabs supports Coach voice.
-- Chatwoot runs the support chat, and an AI support agent may reply before a person does.
-- Stream receives the identity and content needed for its social and moderation features, and carries screen sharing with support.
-- You can control Coach Mo personalization and opted-in analytics from **Settings → Privacy Settings**.
+The app sends one picture of that screen, with your chats hidden. Marco reads it and answers in text. We don't keep the picture.
 
-For the full list of third-party services and what each one does, see [Your data and privacy](/account/data-and-privacy).
+### Live screen sharing
+
+If support asks to share your screen and you allow it, a live video of MoveTogether goes to them through Stream. Nothing is recorded. See [Share your screen with support](/troubleshooting/screen-share).
+
+Don't send passwords, payment card details, or other secrets in Coach Mo, voice, or support chats. Only share health details with support when they're needed to fix the problem.
+
+## Your controls
+
+- **Turn off personalization:** turn off **Personalize Coach with my fitness data** in **Settings** > **Privacy Settings**. Coach Mo then replies without your activity, competitions, or goals.
+- **Delete Coach Mo history:** delete single chats in Coach Mo, or tap **Delete all chats** in Coach Mo settings. Delete saved Files from the **Files** row in Coach Mo. See [Manage Coach Mo conversations](/social-coach/managing-conversations).
+- **Turn off Apple Intelligence:** turn off **Use Apple Intelligence** in Coach Mo settings at any time.
+- **Delete everything:** deleting your account removes your Coach Mo history and other data. See [Download or delete your data](/account/data-and-privacy).
+
+Deleting a Coach Mo chat doesn't delete a separate support conversation. To ask for support data to be deleted, email privacy@movetogetherfitness.com.
+
+For the full provider list and retention details, see [Download or delete your data](/account/data-and-privacy#who-helps-us-run-movetogether) and the [Privacy Policy](https://movetogetherfitness.com/privacy).

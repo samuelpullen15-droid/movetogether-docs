@@ -1,56 +1,81 @@
 ---
-title: "Fitness data not syncing"
-description: "Find where missing activity stops, backfill recent days, understand Exercise credit from workouts, and tell a sync delay from a scoring rule."
+title: "My activity isn't syncing"
+description: "Find where missing steps, calories, or workouts stop on the way to MoveTogether, fix Apple Health or Health Connect access, backfill recent days, and tell a sync delay from a scoring rule."
 ---
 
-Your data travels in one line: tracker, then its own app, then Apple Health (iPhone) or Health Connect (Android), then MoveTogether. Find the step where the reading stops appearing.
+Your activity travels in one line: your tracker, then its own app, then Apple Health (iPhone) or Health Connect (Android), then MoveTogether. When something is missing, find the step where it stops. This page covers every plan, on iPhone and Android.
 
 ## Quick checklist
 
-1. Open your tracker's own app and let the device sync.
+1. Open your tracker's own app (Garmin Connect, Oura, WHOOP, and so on) and let it sync.
 2. Check that the reading is in Apple Health or Health Connect for that date.
-3. In MoveTogether, open **Settings → Data Sources** and check whether access needs review. On iPhone, also check which tracker is counting under **Your tracker**.
-4. Pull to refresh, or tap the **+** button and choose **Sync activity**.
-5. Make sure the reading wasn't typed in by hand. Steps and workouts entered by hand don't count.
-6. Still stuck? Check your connection, update MoveTogether, and reopen the app.
+3. In MoveTogether, open **Settings** > **Data Sources**. Fix anything it asks you to review, and check which device is counting under **Your tracker**.
+4. Tap the **\+** button and choose **Sync activity**, or pull down to refresh.
+5. Make sure the reading wasn't typed in by hand. Steps and workouts entered by hand never count.
+6. Still missing? Update MoveTogether, check your connection, and reopen the app.
 
 ## iPhone: Apple Health
 
-Check the Health app first. If the reading is missing there, the wearable hasn't shared it yet: sync the device, and check its [Apple Health sharing](/apple-health/connect-your-tracker). If it's in Health, check that MoveTogether can read that category.
+1. Open the **Health** app and find the metric for that day. If it's missing there, your tracker hasn't shared it yet. Sync the tracker, and check its [Apple Health sharing](/apple-health/connect-your-tracker).
+2. If it's in Health but not in MoveTogether, open **Settings** > **Data Sources** in MoveTogether. If you see **Review Access** or **Connect**, tap it and allow the categories you want.
+3. If a recent day is still missing, tap **Backfill from Apple Health**. It pulls in recent days that didn't reach MoveTogether.
 
-If a recent day is still missing, open **Settings → Data Sources** and tap **Backfill from Apple Health**. It pulls in recent days that didn't reach MoveTogether.
+MoveTogether syncs every time you open it. To let it sync while it's closed, keep **Background App Refresh** on for MoveTogether in the iPhone Settings app, and note that Low Power Mode pauses background syncing.
 
-If your MoveTogether total is lower than the Health app, that's expected. See [why your numbers differ](/troubleshooting/why-numbers-differ-from-apple-health).
+If your MoveTogether total is lower than the Health app, that's usually expected. See [my numbers don't match Apple Health](/troubleshooting/why-numbers-differ-from-apple-health).
 
 ## Android: Health Connect
 
-Confirm the reading is in Health Connect, that your wearable's app can write it, and that MoveTogether can read it. Reading in the background is a separate permission. MoveTogether reads up to the last 30 days, so older days can't be filled in. See [Connect your tracker to Health Connect](/health-connect/connect-your-tracker).
+1. Open Health Connect and check the reading is there for that day.
+2. Check that your wearable's app has permission to write it to Health Connect.
+3. In MoveTogether, open **Settings** > **Data Sources**. If you see **Background sync is off, so your rings only update while MoveTogether is open.**, tap **Allow background sync**.
+4. If a recent day is missing, tap **Backfill from Health Connect**.
 
-## Wrong device counting
+MoveTogether reads up to the last 30 days from Health Connect, so older days can't be filled in. See [connect your tracker to Health Connect](/health-connect/connect-your-tracker).
 
-On iPhone, only your chosen tracker counts toward your rings. If you're comparing against a different device, check [which tracker counts](/getting-started/primary-activity-source). On Android, the tracker you pick counts. Without a pick, or on a day it didn't record a metric, Health Connect's app priority decides which app counts when two record the same activity.
+## The wrong device is counting
+
+MoveTogether counts one tracker, the one you picked under **Your tracker** in **Settings** > **Data Sources**. If the page says **We're counting your Garmin, but it hasn't synced recently.**, open that tracker's app and let it sync.
+
+If your tracker recorded nothing for a day (say you didn't wear it), MoveTogether uses another device for that day instead of showing zero. See [my numbers don't match my tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker) and [choose which tracker counts](/getting-started/primary-activity-source).
+
+## My steps went up and won't come down (iPhone)
+
+On iPhone, once MoveTogether has saved a step count for a recent day, a later sync can raise it but not lower it. This protects you from a bug where a short background sync saved a much lower number over the full one. It mostly affected WHOOP, which saves a whole day's steps as one reading that starts the night before.
+
+The tradeoff: if a recent day's steps are too high, they stay. That includes:
+
+- Switching your tracker to one with a lower count for that day
+- Deleting a wrong entry in Apple Health and syncing again
+
+If a recent day's steps are wrong because of this, tell the [support chat](/troubleshooting/contact-support) the date and both numbers.
 
 ## My workouts sync, but my Exercise ring looks different
 
-Workout duration, credited Exercise minutes, and a Workout Count score are different measurements.
+Workout time, credited Exercise minutes, and a Workout Count score are different measurements.
 
-On iPhone, Exercise minutes come only from the tracker you chose. If that's an Apple Watch, its own Exercise minutes count. If it's another device, MoveTogether credits Exercise minutes from that device's eligible workouts:
+**iPhone with an Apple Watch as your tracker.** Your Exercise minutes are your Watch's own Exercise minutes, the same as Apple's Activity ring.
 
-- Walking and **Other** sessions need at least **10 minutes**. No distance or minimum pace is required.
-- Walking and Other sessions share a limit of **60 extra minutes per day**.
-- Overlapping sessions aren't added together. A walk recorded during another workout doesn't earn the minutes twice.
-- Other eligible workout types add their non-overlapping time.
+**iPhone with another tracker.** MoveTogether credits the time of your tracker's own workouts:
 
-**Example:** two separate 40-minute walks don't add 80 minutes; walking and Other are capped at 60 for the day. A 12-minute walk can add Exercise minutes even though it doesn't meet the Workout Count rule.
+- Every workout your tracker saved counts in full, including walks and auto-detected sessions. There is no minimum length and no daily cap.
+- Overlapping workouts count once. A walk recorded during another workout doesn't earn the minutes twice.
+- Workouts typed in by hand never count.
 
-On Android, Exercise minutes come from the time of your workout sessions in Health Connect, and overlapping sessions count once.
+**Android.** Exercise minutes come from the time of your workout sessions in Health Connect. If you picked a tracker, only that tracker's sessions count. Overlapping sessions count once, and typed-in sessions never count.
 
-For a **Workout Count** competition, a day scores at most one point. It needs one workout **longer than 15 minutes** from any device, or more than 15 Exercise minutes. See the [scoring reference](/competitions/scoring-reference).
+**Example:** your Garmin records a 40-minute run and, an hour later, a 25-minute walk. Your Exercise ring gets 65 minutes. If your WHOOP also logged the same run, it still counts once.
+
+**Workout Count competitions** score at most 1 point a day. A day scores when you have one workout longer than 15 minutes from any device, or more than 15 Exercise minutes. See the [scoring reference](/competitions/scoring-reference).
 
 ## Rings updated, but a score or challenge hasn't
 
-Refresh the competition or challenge after activity syncs, then check its rules and dates. A daily cap, a goal threshold, a different scoring method, or a finished competition can explain it. See [competition troubleshooting](/troubleshooting/competition-issues) and [daily challenges](/engagement/daily-challenges).
+Refresh the competition or challenge after your activity syncs, then check its rules and dates. A daily cap, a goal threshold, a different scoring method, or a finished competition can explain it. See [competition problems](/troubleshooting/competition-issues) and [daily challenges](/engagement/daily-challenges).
 
-## Still missing
+## Report a sync problem
 
-Contact [the support chat](/troubleshooting/contact-support) with the date, metric, tracker, phone model, app version, and any error message. Say whether the reading appears in the tracker's app and in Apple Health or Health Connect.
+If it's still missing, open the [support chat](/troubleshooting/contact-support) and tap **My activity isn't syncing**. Tell us the date, the metric, and your tracker, and whether the reading shows in your tracker's app and in Apple Health or Health Connect.
+
+<Note>
+  When support opens a ticket for a sync problem, a 7-day check of your syncs starts on its own. During those 7 days, each time your phone does a full sync, it also records how much activity each source (your phone, watch, or a fitness app) reported for recent days. It records totals per source, not your device names. Support uses this only to find the cause, and the records are deleted after 30 days. Nothing is scored from it. See the [Privacy Policy](https://movetogetherfitness.com/privacy).
+</Note>

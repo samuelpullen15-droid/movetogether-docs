@@ -1,66 +1,47 @@
 ---
-title: "Why your numbers differ from Apple Health or Health Connect"
-description: "On iPhone, MoveTogether counts one tracker while Apple Health combines every device. On Android, it counts the tracker you pick, or Health Connect's combined total if you haven't picked one. Here's how to check your numbers."
+title: "My numbers don't match Apple Health or Health Connect"
+description: "Why MoveTogether can read lower than the Health app on iPhone or Health Connect on Android: one tracker counts, hand-typed entries don't, and the health app adds every device together."
 ---
 
-MoveTogether and your phone's health app can show different numbers for the same day. That's usually expected. How it works depends on your phone.
+This page is for when MoveTogether doesn't match your phone's health app: **Apple Health** on iPhone or **Health Connect** on Android. If it doesn't match your watch's or ring's own app (Garmin Connect, Oura, WHOOP, and so on), see [my numbers don't match my tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker) instead.
+
+A difference is usually expected. The health app adds up every device and app on your phone. MoveTogether counts one tracker and leaves out anything typed in by hand.
 
 ## The short version
 
-<Tabs>
-  <Tab title="iPhone">
-    MoveTogether counts **one tracker**, the one you chose, for Steps and Exercise. Apple Health shows a **combined total** from every app and device, so it usually reads higher. Move works a little differently: see [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker).
+| | Health app shows | MoveTogether counts |
+| --- | --- | --- |
+| Steps and calories | A merged total from your phone, watch, and any connected apps | Only your chosen tracker. See [choose which tracker counts](/getting-started/primary-activity-source). |
+| Exercise minutes | Can include workouts from other devices and typed-in workouts | Only your chosen tracker's workouts, never typed-in ones |
+| Hand-typed steps or workouts | Included | Never counted |
 
-    To check MoveTogether, compare it with **your tracker itself** (your watch, ring, or its app), not with Apple Health's total.
-  </Tab>
-  <Tab title="Android">
-    If you picked a tracker, MoveTogether counts **that app's** steps and calories. Health Connect shows a **combined total** from every app, so it can read higher. On a day your tracker didn't record a metric, MoveTogether uses Health Connect's combined total for it.
+So on most days the health app reads the same or higher, never because MoveTogether lost data.
 
-    If you haven't picked a tracker, MoveTogether uses **Health Connect's own combined total**, minus anything typed in by hand, so it should match Health Connect.
+## Why one tracker
 
-    To pick or change your tracker, see [choose which tracker counts](/getting-started/primary-activity-source#on-android).
-  </Tab>
-</Tabs>
+Scores must never count the same movement twice. If you wear two trackers on one walk, both record it. Adding every device together would count that walk twice and reward owning more devices. So MoveTogether takes one tracker's numbers for your day.
 
-Steps and workouts typed in by hand never count in MoveTogether, on either phone. The health app does include them, so on those days it reads higher.
+## iPhone: compare the right number
 
-## iPhone: why one tracker
-
-Scores must never count the same movement twice. If you wear two trackers on one walk, both record it. Adding every source together would count that walk two or three times and reward owning more devices. So MoveTogether uses one tracker's record for your Steps and Exercise rings. Move is the exception, and so is a day your tracker hasn't synced yet: see [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker).
-
-You can change which tracker counts. See [choose which tracker counts](/getting-started/primary-activity-source).
-
-| App | What its number means |
-| --- | --- |
-| MoveTogether on iPhone | Your chosen tracker's Steps and Exercise for the day, without hand-typed entries. Move follows your Apple Watch, or without one, the higher of your tracker and Apple Health's Move |
-| Apple Health | A merged total from your iPhone, watch, and any other connected apps |
-
-### Check your steps
-
-1. Open your tracker or its app (for Apple Watch, the Activity app or the watch itself).
+1. Open your tracker or its app. For an Apple Watch, use the Fitness app or the watch itself.
 2. Compare its number with the same day in MoveTogether.
-3. They should match.
+3. They should match. If MoveTogether matches your tracker but not Apple Health, everything is working.
 
-If MoveTogether matches your tracker but not Apple Health, everything is working.
+Apple Health fills gaps with your **iPhone's** steps, for example while your watch is charging, and adds any other apps. Steps you take with only your iPhone, while your tracker is off, count in Apple Health but not in MoveTogether.
 
-### Why Apple Health shows more
+Move works a little differently from Steps and Exercise. See [my numbers don't match my tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker#with-an-apple-watch-move-matches-your-watch).
 
-Apple Health fills gaps with your **iPhone's** steps, for example while your watch is charging, and adds any other apps or trackers. If you wear your tracker all day, the numbers are usually the same.
+## Android: what MoveTogether counts
 
-Steps you take with only your iPhone, while your tracker is off, count in Apple Health but not in MoveTogether. On those days, expect MoveTogether to read lower.
+- **You picked a tracker in Data Sources.** MoveTogether counts only that tracker's steps and calories, starting with the day you picked it. If it recorded nothing for a day, MoveTogether uses Health Connect's combined total for that day.
+- **You haven't picked one.** MoveTogether uses Health Connect's combined total for the day. Health Connect's app priority decides which app counts when two record the same activity.
 
-Exercise minutes work the same way. Apple's own Exercise ring can include workouts from other devices and workouts typed in by hand. MoveTogether counts only your chosen tracker's minutes, so it can read lower.
-
-## Android: when the numbers differ
-
-- **You picked a tracker.** MoveTogether counts its steps and calories, not Health Connect's combined total. Compare with your tracker's own app instead.
-- **You changed your tracker recently.** A pick counts from the day you make it. Earlier days keep the numbers they had.
-- **Hand-typed entries.** Steps or workouts typed into Health Connect by hand are left out.
-- **App priority.** When MoveTogether uses Health Connect's combined total (no tracker picked, or a day your tracker didn't record that metric), Health Connect's app priority decides which app counts. Change it in Health Connect.
+In both cases, anything typed into Health Connect by hand is left out.
 
 ## Still looks wrong?
 
 - Let your tracker finish syncing to Apple Health or Health Connect, then pull to refresh.
 - Compare the same date and metric. Active calories are not total calories, and Exercise minutes are not total workout time.
-- See [fitness data not syncing](/troubleshooting/sync-issues) and [manage and troubleshoot data sources](/troubleshooting/data-sources).
-- If it still doesn't match, contact [the support chat](/troubleshooting/contact-support) with the date, metric, device, and app version.
+- On iPhone, a recent day's steps can go up but not down. See [my steps went up and won't come down](/troubleshooting/sync-issues#my-steps-went-up-and-wont-come-down-iphone).
+- See [my activity isn't syncing](/troubleshooting/sync-issues) and [my tracker isn't showing up or counting](/troubleshooting/data-sources).
+- If it still doesn't match, tell the [support chat](/troubleshooting/contact-support) the date, the metric, your tracker, and both numbers.
