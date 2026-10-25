@@ -1,9 +1,9 @@
 ---
-title: "Changing competition scoring"
-description: "How a host proposes a scoring change in an active competition, how participants vote, and why applying it rescores earlier days."
+title: "Change scoring in a running competition"
+description: "How a host asks the group to change an active competition's scoring, how everyone votes, and why the change rescores earlier days."
 ---
 
-The host cannot change an active competition’s scoring alone. A proposed change requires every participant to accept.
+Once a competition starts, the host can't change its scoring alone. The host can ask the group, and the change happens only if everyone accepts. This works on iPhone and Android. Before a competition starts, the host can change scoring directly on iPhone in **Edit competition**.
 
 ## Propose a change as host
 
@@ -12,37 +12,52 @@ The host cannot change an active competition’s scoring alone. A proposed chang
     1. Open the active competition.
     2. Tap **More options** (the **⋯** button), then **Edit competition**.
     3. Under **Scoring**, tap **Ask the group to change it**.
-    4. On the **Change scoring** screen, select a new method and tap **Ask the group**.
-    5. Wait for every participant to respond.
+    4. On **Change scoring**, pick the new method and tap **Ask the group**.
   </Tab>
   <Tab title="Android">
     1. Open the active competition.
-    2. Tap the info (**ⓘ**) button.
+    2. Tap **Competition info** (the **ⓘ** button).
     3. Tap **Ask the group to change it**.
-    4. On the **Change scoring** screen, select a new method and tap **Ask the group**.
-    5. Wait for every participant to respond.
+    4. On **Change scoring**, pick the new method and tap **Ask the group**.
   </Tab>
 </Tabs>
 
-Only the host can propose, and only while the competition is active. Some methods can't be proposed:
+Everyone in the competition gets a notification, "Scoring change needs your say", and sees a **Scoring change proposed** banner on the competition.
 
-- **Personal Goal**, because participants would have no personal goal set to score against.
-- **Distance**, because its activity rules and target can only be set when a competition is created.
+### What you can switch to
+
+You can switch to Ring Close Count, Head to Head on Steps, Calories, or Exercise, Workout Count, Percentage of Goals, Total Activity, or Stick To It. Switching to Stick To It needs the host to be on Member or Pro.
+
+You can't switch to:
+
+- **Personal Goal**, because nobody would have a personal goal set.
+- **Distance**, because its rules can only be set when a competition is created.
 - **Sleep**. To race on sleep, start a new [Sleep competition](/competitions/sleep).
 - **WHOOP Strain**, which is retired.
 
-Only one proposal can be open at a time. The host can **Withdraw** an open proposal.
+A Collective competition has no scoring, so there's nothing to change.
 
 ## Vote as a participant
 
-Open the scoring-change banner in the competition details and review both methods. Tap **Accept** to agree or **Decline** to refuse.
+Open the competition. The banner shows the current method, an arrow, and the new one. Tap **Accept** or **Decline**.
 
-The proposal applies only when every participant accepts. One decline leaves the current scoring unchanged. While votes are pending, the original method remains in effect.
+## Rules for the vote
+
+- Everyone who was in the competition when the host asked must accept. The host's own vote counts as accepted.
+- One **Decline** ends the proposal, and scoring stays as it is.
+- People who join during the vote aren't asked. People who leave stop counting.
+- While the vote is open, the current scoring stays in effect.
+- Only one proposal can be open at a time. The host can tap **Withdraw** to cancel it.
+- A proposal that isn't decided within 72 hours expires.
 
 ## What happens when it applies
 
-MoveTogether rescores every earlier day in the competition under the new method, then refreshes the standings. Your position can move even when no new activity arrived.
+MoveTogether rescores every day of the competition so far under the new method, then refreshes the standings. Everyone gets a notification. Positions can move, including yours, even with no new activity.
 
-**Example:** A competition changes from Step Count to Ring Close Count on day four. Days one through three are recalculated using each participant’s ring results, as are later days. The old step totals no longer determine the ranking.
+**Example:** a competition changes from Step Count to Ring Close Count on day 4. Days 1 to 3 are rescored by how many rings each person closed, and so is every day after. The old step totals no longer decide the ranking. Someone who led with 40,000 steps but closed only 4 rings can fall behind someone who closed 8.
 
-If a position looks unexpected, refresh after your sources sync and compare the method with the [scoring reference](/competitions/scoring-reference).
+## Something not right?
+
+- The button is missing: only the host sees it, and only while the competition is active.
+- "There is already a scoring change waiting on the group. Withdraw it first.": tap **Withdraw** on the open proposal, then try again.
+- Standings look wrong after a change: refresh after everyone syncs, and compare with the [scoring reference](/competitions/scoring-reference).
