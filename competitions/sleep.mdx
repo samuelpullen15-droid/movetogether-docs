@@ -1,52 +1,63 @@
 ---
-title: "Sleep competitions"
-description: "How Sleep works in Head to Head: minutes asleep, the 9-hour daily cap, which day a night counts on, naps, who can host, and what Android players see."
+title: "Race your friends on sleep"
+description: "How Sleep works in Head to Head: minutes asleep, the 9-hour daily cap, which day a night counts on, naps, which devices count, and who can host."
 ---
 
-<Note>
-  Sleep competitions are created on iPhone. Android players can join one and see the scores, but the Android app doesn't read sleep from Health Connect yet, so their sleep may not count. The Android join screen says so before you join.
-</Note>
-
-Sleep is one of the numbers you can race in **Head to Head**, next to Steps, Calories, and Exercise. Most time asleep wins. It's a way to compete that doesn't depend on how active you are.
+Sleep is one of the numbers you can race in **Head to Head**, next to Steps, Calories, and Exercise. Most time asleep wins. Hosting a Sleep competition needs a Membership or Pro. Joining is free. It works on iPhone and Android, and only sleep recorded by a wearable counts.
 
 ## How a day scores
 
 Each day scores **1 point per minute asleep**, up to **9 hours (540 points)**. The leaderboard adds up every day in the competition and shows scores in hours and minutes, like "7h 32m".
 
-- **Only time asleep counts.** Awake time during the night doesn't.
-- **Naps count too**, inside the same 9-hour daily cap.
-- **A night counts on the day you wake up.** A night from 11 p.m. Monday to 7 a.m. Tuesday counts entirely for Tuesday. So the night before a competition's last day counts on that last day.
-- **On iPhone, sleep comes from Apple Health.** If more than one device records your sleep, the tracker you picked as your source wins, so wearing two devices to bed never adds time.
+- **Asleep only:** time awake during the night doesn't count.
+- **Naps:** they count too, inside the same 9-hour daily cap.
+- **Which day:** a night counts on the day you wake up. A night from 11 p.m. Monday to 7 a.m. Tuesday counts entirely for Tuesday. So the night before a competition's last day counts on that last day.
+- **Two devices:** if more than one device records the same night, each minute counts once.
 
 **Example:** you sleep 7h 32m overnight and nap for 45 minutes in the afternoon. That day scores 8h 17m (497 points). A 10-hour night scores 9h (540 points), the cap.
 
+## Which devices count
+
+Sleep must come from a wearable. Sleep your phone estimates on its own, sleep from a bedtime schedule, and sleep typed in by hand never count.
+
+<Tabs>
+  <Tab title="iPhone">
+    MoveTogether reads sleep from Apple Health. It counts sleep from an Apple Watch, or from the Oura, WHOOP, Garmin, Polar, Fitbit, or Ultrahuman app writing to Apple Health.
+  </Tab>
+  <Tab title="Android">
+    MoveTogether reads sleep from Health Connect. It counts sleep recorded by a watch, ring, band, or chest strap, whichever app saved it, and sleep from the Oura, WHOOP, Garmin, Polar, Fitbit, or Ultrahuman app.
+  </Tab>
+</Tabs>
+
 ## Create a Sleep competition
 
-Hosting a Sleep competition takes a **Membership or Pro**. On a free plan, Sleep shows in the picker with a lock, and tapping it opens the upgrade screen.
-
-1. Tap **\+**, then **New competition**, and choose **Compete**.
+1. Open **Compete**, tap **+** (**Add competition**), then **Create competition**, and pick **Compete**.
 2. On the scoring step, choose **Head to Head**.
-3. On **Pick the metric**, answer **What are you racing on?** with **Sleep**.
-4. Keep the competition **private**. Sleep competitions are for friends only.
-5. Finish the wizard and tap **Create competition**.
+3. On **Pick the metric**, choose **Sleep**. On iPhone the question is **What are you racing on?** On Android it's **Competing on**.
+4. Finish the steps and tap **Create competition**. Sleep competitions are always private.
 
-Coach Mo can also draft a Sleep competition for you if your plan can host one.
+On the Free plan, Sleep shows with a lock, and tapping it opens the upgrade screen. Coach Mo can also draft a Sleep competition for you if your plan can host one.
 
 ## Join a Sleep competition
 
-Joining is free on every plan. Before you join, the app tells you:
+Joining doesn't need a paid plan while the host has room for free guests. See [when joining needs a Membership](/competitions/how-it-works#when-joining-needs-a-membership). Before you join, the app tells you:
 
-- **Other players will see your sleep time.** That's how the leaderboard works.
-- **If we haven't seen any sleep from you in the last 14 days**, you'll score 0 unless your device starts sending sleep data. You can still join, and start wearing your watch or ring to bed.
+- "Players in this competition will see your sleep time." That's how the leaderboard works.
+- If MoveTogether hasn't seen any sleep from you in the last 14 days, it warns that you'll score 0 unless your wearable starts sending sleep. You can still join, and start wearing your watch or ring to bed.
 
-## Rules that can't change
+## Rules
 
-- **Friends only.** A Sleep competition can't be public, always-on, or part of a seasonal event. Trying to make one public shows "Sleep competitions are for friends only. Make it private to use Sleep."
-- **No scoring-change vote to Sleep.** The host can't ask the group to switch an existing competition to Sleep. See [changing scoring](/competitions/changing-scoring).
-- **Editing is iPhone only.** On Android, editing a Sleep competition shows "Can't edit on Android yet", and nothing changes.
+- **Friends only:** a Sleep competition can't be public, always-on, or part of a seasonal event. Trying to make one public shows "Sleep competitions are for friends only. Make it private to use Sleep."
+- **No vote to switch:** the host can't ask the group to change an existing competition to Sleep. See [changing scoring](/competitions/changing-scoring).
+- **No Best days:** [Best days](/competitions/best-days) doesn't work with Sleep.
+
+## Something not right?
+
+- You score 0: check that your wearable records sleep and sends it to Apple Health or Health Connect. Sleep from your phone alone doesn't count.
+- A night landed on the wrong day: a night counts on the day you woke up.
+- More help: [competition issues](/troubleshooting/competition-issues) and [sync issues](/troubleshooting/sync-issues).
 
 ## Related
 
 - [Competition scoring reference](/competitions/scoring-reference)
 - [How competitions work](/competitions/how-it-works)
-- [Competition issues](/troubleshooting/competition-issues)
