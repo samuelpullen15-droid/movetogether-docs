@@ -1,13 +1,13 @@
 ---
 title: "Connect your tracker to Health Connect"
-description: "On Android, MoveTogether reads Health Connect. Turn on Health Connect sharing in your wearable's app, allow MoveTogether to read it, and confirm it's working."
+description: "On Android, MoveTogether reads Health Connect. Turn on Health Connect sharing in your wearable's app, allow MoveTogether to read it, and pick your tracker."
 ---
 
-On Android, MoveTogether reads your steps, calories, and workouts from **Health Connect**. Your wearable's own app shares its data into Health Connect, and MoveTogether reads it from there. On iPhone, see [Connect your tracker to Apple Health](/apple-health/connect-your-tracker).
+On Android, MoveTogether reads your activity from **Health Connect**. Your wearable's own app shares its data into Health Connect, and MoveTogether reads it from there. This is for Android. On iPhone, see [Connect your tracker to Apple Health](/apple-health/connect-your-tracker).
 
 ## 1. Share your wearable into Health Connect
 
-Open your wearable's app, find its Health Connect setting (usually under settings, connected apps, or data sharing), and turn sharing on for activity, steps, and workouts.
+Open your wearable's app, find its Health Connect setting (usually under settings, connected apps, or data sharing), and turn sharing on for activity, steps, workouts, and sleep.
 
 | Device | App that shares into Health Connect |
 | --- | --- |
@@ -25,25 +25,41 @@ Menu names change between app versions. If you can't find the setting, search th
 
 ## 2. Allow MoveTogether to read Health Connect
 
-When MoveTogether asks, allow access. MoveTogether reads steps, active calories, and exercise sessions. For Pro members it also reads sleep, weight, and height. It never writes to Health Connect. See [MoveTogether on Android](/getting-started/android) for exactly what is read.
+When MoveTogether asks, allow access. It asks to read:
 
-## 3. Health Connect decides overlaps
+| Data | Who it's asked of | Needed? |
+| --- | --- | --- |
+| Steps, active calories, exercise sessions | Everyone | Yes. These fill your rings |
+| Distance | Everyone | Optional. Used for Distance competitions |
+| Sleep | Everyone | Optional. Used for Sleep competitions |
+| Weight | Pro members | Optional |
 
-On Android there's no tracker to pick in MoveTogether. Your rings use Health Connect's own combined total for each day. If two apps record the same activity (for example your phone and your watch both count a walk), Health Connect's app priority decides which one counts, so it isn't counted twice. To change which app wins, change the app priority in Health Connect.
+You can also allow reading in the background, so your rings update while the app is closed. MoveTogether never writes to Health Connect, and it reads up to the last 30 days. See [MoveTogether on Android](/getting-started/android#what-movetogether-reads) for more.
 
-Steps and workouts typed into Health Connect by hand don't count.
+## 3. Choose your tracker
+
+If more than one app writes activity to Health Connect, pick the one you actually wear. The app asks you once after onboarding. To change it later, open **Settings** > **Data Sources** and, under **Your tracker**, tap **Change**.
+
+Until you pick one, MoveTogether uses Health Connect's own combined total, and Health Connect's app priority decides which app wins when two record the same walk. See [choose which tracker counts](/getting-started/primary-activity-source).
+
+## What counts
+
+- Steps and workouts typed into Health Connect by hand don't count.
+- Sleep counts only when a wearable recorded it. Sleep your phone estimates on its own doesn't count.
 
 ## Confirm it's reading
 
 1. Open Health Connect from your phone's settings.
 2. Check that your wearable's app has permission to write data, and that recent steps or workouts appear.
 3. Check that MoveTogether has permission to read them.
-4. Reopen MoveTogether and refresh.
+4. Back in MoveTogether, tap **+** > **Sync activity**.
 
 <Note>
-Not every wearable writes every metric to Health Connect. A device can share workouts but not steps, so it may count for one metric and not another.
+  Not every wearable writes every metric to Health Connect. A device can share workouts but not steps, so it may count for one metric and not another.
 </Note>
 
 ## Still not showing up?
 
-If the data is in Health Connect but MoveTogether doesn't see it, [contact support](/troubleshooting/contact-support) and tell us which wearable and phone you use.
+If the data is in Health Connect but MoveTogether doesn't see it, [contact support](/troubleshooting/contact-support) and tell us which wearable and phone you use. For other sync problems, see [fitness data not syncing](/troubleshooting/sync-issues).
+
+**Next:** [choose which tracker counts](/getting-started/primary-activity-source).

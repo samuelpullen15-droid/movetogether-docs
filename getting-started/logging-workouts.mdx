@@ -1,41 +1,52 @@
 ---
-title: "Logging workouts"
-description: "How workouts reach MoveTogether, why hand-typed workouts don't count, and what to check when a workout is missing."
+title: "How workouts get into MoveTogether"
+description: "How workouts reach MoveTogether from Apple Health or Health Connect, how they become Exercise minutes, why typed-in workouts don't count, and what to check when one is missing."
 ---
 
-Workouts reach MoveTogether from Apple Health (iPhone) or Health Connect (Android). There is no way to type a workout into MoveTogether, and workouts or steps typed into Apple Health or Health Connect by hand don't count. When a workout is missing, get the source syncing rather than entering it again.
+You don't log workouts inside MoveTogether. You record them on your watch, phone, or workout app, and MoveTogether reads them from Apple Health (iPhone) or Health Connect (Android). This works the same on every plan.
 
 ## How a workout becomes ring progress
 
 1. You record the workout on your watch, phone, or wearable app.
 2. That app writes it to Apple Health or Health Connect.
-3. MoveTogether reads it from there. The workout shows up, and if it's long enough it counts toward a **Workout Count** competition, whichever device recorded it.
-4. Your Move, Exercise, and Steps rings update from the same data. On iPhone, they come from the [tracker you chose](/getting-started/primary-activity-source), so a workout from another device shows up but doesn't add to Steps or Exercise. Without an Apple Watch, it can add to Move: see [why your numbers don't match your tracker's app](/troubleshooting/why-numbers-differ-from-your-tracker).
+3. MoveTogether reads it from there, and the workout shows up.
+4. Your Move, Exercise, and Steps rings update from the same data. They follow the [tracker you chose](/getting-started/primary-activity-source), so a workout from another device shows up but doesn't add to your rings.
 
 If the workout isn't in Apple Health or Health Connect, it can't appear here.
+
+## How Exercise minutes are counted
+
+Exercise minutes come from your chosen tracker. How they're counted depends on that tracker:
+
+| Your tracker | Exercise minutes |
+| --- | --- |
+| Apple Watch or iPhone | Apple's own Exercise minutes. On a day with no workout at all, at most 60 count |
+| Any other wearable or app (iPhone), or any tracker on Android | Each workout it recorded counts for its full length, including walks of any length |
+
+- If two workouts overlap, the overlapping time counts once.
+- A day can't have more than 24 hours of Exercise.
+- Workouts typed in by hand never count.
+
+MoveTogether's number can differ from your tracker's own app, which may count minutes outside workouts. See [fitness data not syncing](/troubleshooting/sync-issues#my-workouts-sync-but-my-exercise-ring-looks-different).
+
+## Workouts in competitions
+
+In a **Workout Count** competition, you earn the day's point with a workout over 15 minutes. Workouts from any device count here, not only your tracker's. See the [scoring reference](/competitions/scoring-reference).
 
 ## A workout is missing
 
 Check these in order.
 
-**Is it in the wearable's app?** If not, it was never recorded, and MoveTogether can't recover it.
+1. **The wearable's app:** check the workout is there. If not, it was never recorded, and MoveTogether can't recover it.
+2. **Apple Health or Health Connect:** check it's there too. If not, turn on sharing in the wearable's app. See [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker).
+3. **Typed in by hand:** workouts entered by hand in Apple Health or Health Connect don't count and won't show up.
+4. **Permissions:** a permission can be turned off in your phone's settings after you first allow it. See [manage and troubleshoot data sources](/troubleshooting/data-sources).
+5. **Refresh:** tap **+** > **Sync activity**.
 
-**Is it in Apple Health or Health Connect?** If not, turn on sharing in the wearable's app. See [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker).
+## Why there's no manual entry
 
-**Was it typed in by hand?** Workouts entered by hand in Apple Health or Health Connect don't count and won't show up.
+Rings and competition scores are built from measured activity. Typed-in numbers can't be checked, and a race where some scores are measured and others are typed isn't fair. That's also why steps and workouts typed into Apple Health or Health Connect by hand don't count.
 
-**Are permissions still granted?** A permission can be revoked in your phone's settings after you first allow it. See [manage and troubleshoot data sources](/troubleshooting/data-sources).
+## Still stuck?
 
-Then refresh. The **\+** button has **Sync activity** on both apps.
-
-## Why there is no manual entry
-
-Rings and competition scores are built from measured activity. Typed-in numbers can't be checked, and a competition where some scores are measured and others are typed in isn't fair. That's also why steps and workouts typed into Apple Health or Health Connect by hand don't count.
-
-## Exercise minutes look wrong
-
-MoveTogether credits Exercise minutes by its own rules, which can differ from the recorded duration. On iPhone, Exercise minutes come only from the tracker you chose, so a workout from another device doesn't add minutes. Walking and **Other** sessions need a minimum length and share a daily limit, and overlapping sessions are merged. [Fitness data not syncing](/troubleshooting/sync-issues#my-workouts-sync-but-my-exercise-ring-looks-different) has the exact numbers.
-
-## Still stuck
-
-If the workout is in Apple Health or Health Connect, wasn't typed in by hand, and still hasn't appeared after a day, [contact support](/troubleshooting/contact-support). Include the date and the app that recorded the workout.
+If the workout is in Apple Health or Health Connect, wasn't typed in by hand, and still hasn't shown up after a day, [contact support](/troubleshooting/contact-support). Include the date and the app that recorded the workout.
