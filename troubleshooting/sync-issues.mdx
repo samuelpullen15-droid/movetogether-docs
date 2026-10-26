@@ -41,14 +41,23 @@ If your tracker recorded nothing for a day (say you didn't wear it), MoveTogethe
 
 ## My steps went up and won't come down (iPhone)
 
-On iPhone, once MoveTogether has saved a step count for a recent day, a later sync can raise it but not lower it. This protects you from a bug where a short background sync saved a much lower number over the full one. It mostly affected WHOOP, which saves a whole day's steps as one reading that starts the night before.
+<Tabs>
+  <Tab title="Version 2.2.0">
+    Version 2.2.0 fixes the bug behind this rule, so a later sync can lower a recent day's steps again. Switching your tracker to one with a lower count, or deleting a wrong entry in Apple Health, updates that day the next time MoveTogether syncs.
 
-The tradeoff: if a recent day's steps are too high, they stay. That includes:
+    If a recent day's steps still look too high after you update, tell the [support chat](/troubleshooting/contact-support) the date and both numbers.
+  </Tab>
+  <Tab title="Version 2.1.3">
+    On iPhone, once MoveTogether has saved a step count for a recent day, a later sync can raise it but not lower it. This protects you from a bug where a short background sync saved a much lower number over the full one. It mostly affected WHOOP, which saves a whole day's steps as one reading that starts the night before.
 
-- Switching your tracker to one with a lower count for that day
-- Deleting a wrong entry in Apple Health and syncing again
+    The tradeoff: if a recent day's steps are too high, they stay. That includes:
 
-If a recent day's steps are wrong because of this, tell the [support chat](/troubleshooting/contact-support) the date and both numbers.
+    - Switching your tracker to one with a lower count for that day
+    - Deleting a wrong entry in Apple Health and syncing again
+
+    Updating to version 2.2.0 removes this rule. If a recent day's steps are wrong because of this, tell the [support chat](/troubleshooting/contact-support) the date and both numbers.
+  </Tab>
+</Tabs>
 
 ## My workouts sync, but my Exercise ring looks different
 
@@ -71,6 +80,14 @@ Workout time, credited Exercise minutes, and a Workout Count score are different
 ## Rings updated, but a score or challenge hasn't
 
 Refresh the competition or challenge after your activity syncs, then check its rules and dates. A daily cap, a goal threshold, a different scoring method, or a finished competition can explain it. See [competition problems](/troubleshooting/competition-issues) and [daily challenges](/engagement/daily-challenges).
+
+### "Syncing…" on a competition day (iPhone)
+
+<Note>New in version 2.2.0. Update the app if you don't see this yet.</Note>
+
+In a competition's **Daily Breakdown**, today's card can say **Syncing…** under its points. That means Apple Health shows more of today's activity than MoveTogether has scored, and the app is sending it now. When the sync finishes, the points update and **Syncing…** goes away.
+
+If a gap is left after that, it isn't a sync problem. It comes from a scoring rule, like a cap or which tracker counts. Sleep, Distance, and Strain competitions don't show **Syncing…**.
 
 ## Report a sync problem
 

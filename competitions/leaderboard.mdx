@@ -19,7 +19,20 @@ Each row shows a person's place, photo, name, and points. The board updates as e
 
 People with the same points share a rank. A tie at the top means everyone tied for first is a winner. Each of them gets the win notification, and the win counts on each of their profiles. If nobody has scored yet, nobody is in the lead.
 
-On the leaderboard itself, tied people are still listed one above the other, and the row numbers can differ (for example, 2 and 3) even though the scores are equal. The rival card says when you're tied, for example **Tied for #1**.
+<Tabs>
+  <Tab title="Version 2.2.0">
+    On the leaderboard, tied people show the same place number, though they're still listed one above the other. Before anyone scores, places show a dash. The rival card says when you're tied, for example **Tied for #1**. When a competition ends in a tie for first, each winner sees "You tied for first!" and the results list every winner.
+  </Tab>
+  <Tab title="Version 2.1.3">
+    On the leaderboard itself, tied people are still listed one above the other, and the row numbers can differ (for example, 2 and 3) even though the scores are equal. The rival card says when you're tied, for example **Tied for #1**.
+  </Tab>
+</Tabs>
+
+## Daily Breakdown (iPhone)
+
+<Note>New in version 2.2.0. Update the app if you don't see this yet.</Note>
+
+Each day card in **Daily Breakdown** shows the points saved for that day, the same number the leaderboard uses. If Apple Health has more of today's activity than MoveTogether has scored, today's card shows **Syncing…** under its points while the app sends it, then updates. Sleep, distance, and strain competitions don't show **Syncing…**. Tap a day to see how its points add up. In a paced seasonal Competition, that sheet reads **Scores are % of your own daily target. Each day counts up to 150%.**
 
 ## You versus the people around you
 
@@ -67,5 +80,5 @@ Your privacy settings control whether leaderboards show your real name, whether 
 ## Something not right?
 
 - Someone's score looks stuck: their phone may not have synced. Scores update when it does.
-- Tied scores with different numbers: that's expected. See [Ties and winners](#ties-and-winners).
+- Tied scores with different numbers: that's expected in version 2.1.3. Version 2.2.0 gives tied people the same number. See [Ties and winners](#ties-and-winners).
 - More help: [competition issues](/troubleshooting/competition-issues).
