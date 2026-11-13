@@ -98,6 +98,7 @@
                 "pages": [
                   "competitions/personal-and-shared-goals",
                   "competitions/teams",
+                  "competitions/captain-draft",
                   "competitions/group-challenges",
                   "competitions/distance",
                   "competitions/sleep",
