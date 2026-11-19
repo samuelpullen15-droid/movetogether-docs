@@ -83,7 +83,8 @@ These providers process data on our behalf. Some apply only to certain app versi
 | --- | --- |
 | Apple | Sign in with Apple, Apple Health, push notifications, App Store purchases, and Apple Intelligence for Coach Mo replies if you turn it on |
 | Google | Sign in with Google, Health Connect, and contextual AdMob ads with Google's consent tool where required |
-| Meta and TikTok | Ad delivery and aggregate install reporting. They get no account, health, or competition data |
+| Meta | Ad delivery and install reporting. From iOS 2.3.0, only while **Help improve MoveTogether** is on, Meta's SDK in the app sends install and app-open events with an anonymous app identifier, and RevenueCat sends subscription purchases. Meta gets no account, health, or competition data |
+| TikTok | Ad delivery and aggregate install reporting. TikTok gets no account, health, or competition data |
 | Tenjin | Install measurement for iPhone app versions before 2.1.2, only if you allowed tracking. Version 2.1.2 and later don't track |
 | Supabase | Database, sign-in, file storage, and server functions |
 | PostHog | Product analytics, masked session replay, and diagnostics, while **Help improve MoveTogether** is on |
