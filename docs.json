@@ -46,6 +46,11 @@
   },
   "redirects": [
     {
+      "source": "/social-coach/voice",
+      "destination": "/social-coach/coach-mo#dictate-a-message-on-iphone",
+      "permanent": true
+    },
+    {
       "source": "/getting-started/android-coming-soon",
       "destination": "/getting-started/android",
       "permanent": true
@@ -153,7 +158,6 @@
               "social-coach/coach-plans-rest-days",
               "engagement/morning-brief",
               "engagement/weekly-report",
-              "social-coach/voice",
               {
                 "group": "Mo settings and memory",
                 "pages": [
