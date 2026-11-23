@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "MoveTogether",
+  "description": "Help center for MoveTogether, the cross-wearable fitness competition app for iPhone and Android by DesignSpark Studio LLC. On the App Store it is \"MoveTogether Fitness Challenge\"; on Google Play it is \"MoveTogether: Fitness Compete\".",
   "colors": {
     "primary": "#FB104E",
     "light": "#FE4173",
@@ -23,6 +24,19 @@
       "og:image:height": "630",
       "twitter:image": "https://docs.movetogetherfitness.com/images/og.png",
       "twitter:card": "summary_large_image"
+    },
+    "organization": {
+      "id": "https://movetogetherfitness.com/#organization",
+      "name": "MoveTogether",
+      "legalName": "DesignSpark Studio LLC",
+      "url": "https://movetogetherfitness.com",
+      "logo": "https://movetogetherfitness.com/og-icon.png",
+      "sameAs": [
+        "https://www.instagram.com/movetogether.fitness/",
+        "https://www.tiktok.com/@movetogether.fitness",
+        "https://apps.apple.com/us/app/movetogether-fitness-challenge/id6757620063",
+        "https://play.google.com/store/apps/details?id=studio.designspark.movetogether"
+      ]
     }
   },
   "integrations": {
